@@ -1,0 +1,871 @@
+---
+title: Collab
+---
+extends layouts/_layout
+block content
+	.main
+		.header.js-header#header
+			.header__center.center
+				button.header__burger.js-header-burger
+					span
+				a.header__logo(href="#")
+					img.header__pic(src="img/logo.svg" alt="")
+				.header__wrap.js-header-wrap
+					nav.header__nav
+						a.header__item(href="#") Features
+						a.header__item(href="#") Pricing
+						a.header__item(href="#") Tours
+						.header__item.js-header-item
+							a.header__head.js-header-head(href="#") Explore
+								+i('arrow-down')
+							.header__body.js-header-body
+								.header__center.center
+									.header__row
+										.header__col
+											.header__category Features
+											.header__menu
+												a.header__box(href="#")
+													.header__preview
+														img.header__pic(src="img/cup.png" alt="")
+													.header__deetails
+														.header__info Collab Assistant
+														.header__text Smart automation system
+												a.header__box(href="#")
+													.header__preview
+														img.header__pic(src="img/camera.png" alt="")
+													.header__deetails
+														.header__info Advanced Importer
+														.header__text Work with various media formats
+												a.header__box(href="#")
+													.header__preview
+														img.header__pic(src="img/calendar.png" alt="")
+													.header__deetails
+														.header__info Product Management
+														.header__text Workspace reimagined
+										.header__col
+											.header__category Features
+											.header__menu
+												a.header__box(href="#")
+													.header__preview
+														img.header__pic(src="img/chatbox.png" alt="")
+													.header__deetails
+														.header__info Support
+														.header__text 24/7 Live Support
+												a.header__box(href="#")
+													.header__preview
+														img.header__pic(src="img/fill.png" alt="")
+													.header__deetails
+														.header__info Color Picker
+														.header__text Advanced color picker
+										.header__col
+											.header__category Company
+											.header__menu
+												a.header__box(href="#")
+													.header__preview
+														img.header__pic(src="img/clock.png" alt="")
+													.header__deetails
+														.header__info Collab Team
+														.header__text See who’s behind the magic
+												a.header__box(href="#")
+													.header__preview
+														img.header__pic(src="img/bell-flat.png" alt="")
+													.header__deetails
+														.header__info Collab Design
+														.header__text What we’re working on
+					.header__photo
+						img.header__pic(src="img/menu-pic.png" alt="")
+				.header__search.js-header-search
+					button.header__open.js-header-open
+						+i('search')
+					.header__field
+						input.header__input(type="text" placeholder="Search ...")
+				a.header__btn.btn.btn_pink(href="login.html") Get Started
+			.header__bg.js-header-bg
+		.main__center.center
+			.main__wrap
+				h1.main__title.title.title_big(data-aos)
+					span.title__box
+						span.title__text Create  
+					span.title__box
+						span.title__text <span class="title__line">Like</span>
+					span.title__box
+						span.title__text  Never
+					span.title__box
+						span.title__text Before<span class="title__color">.</span>
+				.main__info.info(data-aos="animation-scale-y" data-aos-delay="400") Create, build, collaborate and ship products faster. Good bye code! 👋
+				.main__control(data-aos="animation-scale-y" data-aos-delay="550")
+					a.main__btn.btn.btn_purple(href="login.html") Get Started
+					a.main__link(href="#")
+						.main__icon
+							img.main__pic(src="img/play.svg" alt="")
+						.main__text See It In Action!
+				.main__scroll(data-aos="animation-scale-y" data-aos-delay="650")
+					a.main__link(href="#")
+						.main__icon
+							img.main__pic(src="img/scroll.svg" alt="")
+						.main__text Scroll to explore
+			.main__view(data-aos)
+				.main__preview
+					img.main__pic.js-parallax(data-scale="1.5" data-orientation="down" src="img/main-pic-1.png" alt="")
+				.main__preview
+					img.main__pic.js-parallax(data-scale="1.5" data-orientation="up" src="img/main-pic-2.png" alt="")
+				.main__preview
+					img.main__pic(src="img/mouse.png" alt="")
+				.main__preview
+					img.main__pic(src="img/main-pic-3.png" alt="")
+			.main__circles
+				.main__circle
+				.main__circle.js-rellax(data-rellax-speed="2")
+				.main__circle.js-rellax(data-rellax-speed="1")
+				.main__circle.js-rellax(data-rellax-speed="2")
+				.main__circle.js-rellax(data-rellax-speed=".3")
+				.main__circle
+				.main__circle.js-rellax(data-rellax-speed="1")
+	.features.js-features
+		.features__center.center
+			.features__head(data-aos="animation-scale-y")
+				.features__stage.stage Features
+				.features__box
+					h2.features__title.title The world’s most powerful design tool.
+					.features__info.info Simultaneously design, code and collaborate with your team all from one place.
+			.features__body
+				.features__container
+					.features__slider.js-features-slider
+						.features__slide(data-aos="animation-scale-y")
+							.features__details
+								.features__preview
+									img.features__pic(src="img/camera.png" alt="")
+								.features__category Import Photos & Videos
+								.features__text Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.
+								a.features__link(href="#") Find out more
+						.features__slide(data-aos="animation-scale-y" data-aos-delay="200")
+							.features__details
+								.features__preview
+									img.features__pic(src="img/calendar.png" alt="")
+								.features__category Calendar API Built-In
+								.features__text Kickstart your design process for a wide variety of apps such as calendar, analytics, virtual assistant, file manager.
+								a.features__link(href="#") Find out more
+						.features__slide
+							.features__details
+								.features__preview
+									img.features__pic(src="img/camera.png" alt="")
+								.features__category Import Photos & Videos
+								.features__text Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.
+								a.features__link(href="#") Find out more
+						.features__slide
+							.features__details
+								.features__preview
+									img.features__pic(src="img/calendar.png" alt="")
+								.features__category Calendar API Built-In
+								.features__text Kickstart your design process for a wide variety of apps such as calendar, analytics, virtual assistant, file manager.
+								a.features__link(href="#") Find out more
+						.features__slide
+							.features__details
+								.features__preview
+									img.features__pic(src="img/camera.png" alt="")
+								.features__category Import Photos & Videos
+								.features__text Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.
+								a.features__link(href="#") Find out more
+				.features__status.js-features-status
+		.features__circle.js-rellax(data-rellax-speed="-.7")
+		.features__bg(data-aos data-aos-duration="1000")
+			img.features__pic(src="img/features-pic-1.svg" alt="")
+	.access
+		.access__center.center
+			.access__view(data-aos data-aos-delay="300")
+				.access__preview
+					img.access__pic(src="img/access-pic-2.png" alt="")
+				.access__preview
+					img.access__pic.js-parallax(data-scale="1.5" data-orientation="up" src="img/access-pic-1.png" alt="")
+				.access__preview
+					img.access__pic.js-parallax(data-scale="1.5" data-orientation="down" src="img/main-pic-2.png" alt="")
+			.access__wrap(data-aos="animation-scale-y")
+				.access__info Ready to get started?  <br>Sign up with your email
+				form.access__form
+					.access__field
+						input.access__input(type="email" placeholder="Email address")
+						.access__icon
+							img.access__pic(src="img/sending-mail.svg" alt="")
+					button.access__btn.btn.btn_purple(type="submit") Get Started
+		.access__circles
+			.access__circle(data-aos data-aos-offset="300")
+			.access__circle(data-aos data-aos-delay="100" data-aos-offset="300")
+			.access__circle(data-aos data-aos-delay="200" data-aos-offset="300")
+		.access__clouds
+			.access__cloud
+				img.access__pic.js-parallax(data-scale="1.5" data-orientation="left" src="img/cloud.png" alt="")
+			.access__cloud
+				img.access__pic.js-parallax(data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="")
+		.access__balls
+			.access__ball
+			.access__ball
+			.access__ball
+			.access__ball
+			.access__ball.js-rellax(data-rellax-speed="-1")
+			.access__ball
+			.access__ball.js-rellax(data-rellax-speed="1")
+	.layouts
+		.layouts__center.center
+			.layouts__wrap
+				.layouts__head(data-aos="animation-scale-y")
+					.layouts__stage.stage Auto Adaptive layouts
+					h2.layouts__title.title Responsive DNA<span class="title__color">.</span>
+				.layouts__info.info(data-aos="animation-scale-y") Easily create truly responsive components while deploying production-ready code.
+				.layouts__list
+					.layouts__item(data-aos="animation-scale-y")
+						.layouts__icon
+							img.layouts__pic(src="img/layout-1.svg" alt="")
+						.layouts__text Advanced pinning
+					.layouts__item(data-aos="animation-scale-y")
+						.layouts__icon
+							img.layouts__pic(src="img/layout-2.svg" alt="")
+						.layouts__text Relative positioning with containers
+					.layouts__item(data-aos="animation-scale-y")
+						.layouts__icon
+							img.layouts__pic(src="img/layout-3.svg" alt="")
+						.layouts__text Percentage-based geometry
+			.layouts__view(data-aos)
+				.layouts__preview
+					img.layouts__pic(src="img/layouts-pic-1.png" alt="")
+				.layouts__preview
+					img.layouts__pic(src="img/layouts-pic-2.png" alt="")
+				.layouts__preview
+					img.layouts__pic(src="img/layouts-pic-3.png" alt="")
+				.layouts__preview
+					img.layouts__pic(src="img/layouts-pic-4.png" alt="")
+				.layouts__preview
+					img.layouts__pic(src="img/layouts-pic-5.png" alt="")
+	.like
+		.like__center.center
+			.like__container
+				.like__wrap
+					h2.like__title.title(data-aos="animation-scale-x") Native-like Prototying<span class="title__color">.</span>
+					.like__text(data-aos="animation-scale-x" data-aos-delay="150")
+						p With Collab Smart Prototype you create your interactions and animations once and store as presets in the cloud for future use.  
+						p Use the Collab App to test in real-time.
+					.like__btn(data-aos="animation-scale-x" data-aos-delay="300")
+						button.btn.btn_purple See Sample Prototype
+				.like__preview(data-aos)
+					img.like__pic(src="img/hand-1.png" alt="")
+				.like__circle
+				.like__circles
+					.like__circle
+					.like__circle.js-rellax(data-rellax-speed="-1")
+					.like__circle.js-rellax(data-rellax-speed=".8")
+					.like__circle
+					.like__circle
+	.plan.js-plan
+		.plan__center.center
+			.plan__head(data-aos="animation-scale-y")
+				.plan__stage.stage Join The Revolution
+				h2.plan__title.title Find the <span class="title__color">Right Plan.</span>
+				.plan__info.info Flexible pricing options for freelancers and design teams.
+				label.switch
+					input.switch__input(type="checkbox" checked)
+					span.switch__flex
+						span.switch__yearly Billed Yearly
+						span.switch__box
+						span.switch__monthly Billed Monthly
+				.plan__variants
+					select.plan__select.js-plan-select
+						option Professional
+						option Standard
+						option Ultimate
+			.plan__body
+				.plan__item.js-plan-item(data-aos="animation-translate-y")
+					.plan__star
+						+i('star')
+					.plan__category
+						.plan__icon
+							img.plan__pic(src="img/smile-1.svg" alt="")
+						.plan__text Individual
+					h3.plan__title.title.title_sm Professional
+					.plan__price <span class="plan__money">$19.99</span> /month
+					ul.plan__list
+						li 1 user
+						li 2 TB of secure storage
+						li Premium productivity features and simple, secure file sharing
+					a.plan__btn.btn.btn_white.js-popup-open(href="#popup-contact" data-effect="mfp-zoom-in") Try free for 30 days
+				.plan__item.js-plan-item(data-aos="animation-translate-y" data-aos-delay="200")
+					.plan__category
+						.plan__icon
+							img.plan__pic(src="img/smile-2.svg" alt="")
+						.plan__text Small Team
+					h3.plan__title.title.title_sm Standard
+					.plan__price <span class="plan__money">$29.99</span> /month
+					ul.plan__list
+						li 3+ user
+						li 5 TB of secure storage
+						li Premium productivity features and simple, secure file sharing
+					a.plan__btn.btn.btn_pink.js-popup-open(href="#popup-contact" data-effect="mfp-zoom-in") Try free for 30 days
+				.plan__item.js-plan-item(data-aos="animation-translate-y" data-aos-delay="400")
+					.plan__category
+						.plan__icon
+							img.plan__pic(src="img/smile-2.svg" alt="")
+						.plan__text Large Team
+					h3.plan__title.title.title_sm Ultimate
+					.plan__price <span class="plan__money">$99.99</span> /month
+					ul.plan__list
+						li 10+ user
+						li 10 TB of secure storage
+						li Premium productivity features and simple, secure file sharing
+					a.plan__btn.btn.btn_purple.js-popup-open(href="#popup-contact" data-effect="mfp-zoom-in") Try free for 30 days
+		.plan__circle.js-rellax(data-rellax-speed="-1")
+	.work
+		.work__center.center
+			.work__head
+				.work__stage.stage Collaboration Redefined
+				h2.work__title.title <span class="title__color">Get Work<br> Done</span> together
+			.work__details(data-aos="animation-translate-y" data-aos-duration="800")
+				.work__icon
+					img.work__pic(src="img/balls.svg" alt="")
+				.work__text Let your personalized Collab assistant do the heavy lifting while you focus on creating.
+				a.work__link(href="#") Find out more
+		.work__hands
+			.work__hand(data-aos data-aos-duration="800" data-aos-offset="0")
+				img.work__pic.js-parallax(data-scale="1.2" data-orientation="down" src="img/hand-2.png" alt="")
+			.work__hand(data-aos data-aos-duration="800" data-aos-offset="0")
+				img.work__pic.js-parallax(data-scale="1.3" data-orientation="up" src="img/hand-3.png" alt="")
+		.work__wave
+			img.work__pic(src="img/wave.svg" alt="")
+		.work__preview(data-aos data-aos-duration="600")
+			img.work__pic(src="img/work-pic.png" alt="")
+		.work__circles
+			.work__circle.js-rellax(data-rellax-speed="1")
+			.work__circle
+			.work__circle.js-rellax(data-rellax-speed="-1")
+			.work__circle
+			.work__circle
+		.work__cursor(data-aos)
+			img.work__pic(src="img/cursor.png" alt="")
+	.teams
+		.teams__center.center
+			.teams__head(data-aos="animation-scale-y")
+				.teams__stage.stage Team Collaboration Redefined
+				h2.teams__title.title Helping world-class teams design faster together<span class="title__color">.</span>
+			.teams__body
+				.teams__col(data-aos="animation-scale-y")
+					h3.teams__title.title.title_sm What others are&nbsp;saying
+				.teams__col
+					.teams__container
+						.teams__slider.js-teams-slider
+							.teams__slide(data-aos="animation-scale-y" data-aos-delay="200")
+								.teams__line(style="background-color: #5956E9;")
+								.teams__name(style="color: #C75C6F;") UI8
+								.teams__text “ Collab is fast. Files are  always up to date.  <br>It’s easy to share designs across the organization, so collaboration is easy ”
+								.teams__user
+									.teams__ava
+										img.teams__pic(src="img/ui8.png" alt="")
+									.teams__box
+										.teams__man Dash
+										.teams__login Founder @UI8
+							.teams__slide(data-aos="animation-scale-y" data-aos-delay="400")
+								.teams__line(style="background-color: #FAB8C4;")
+								.teams__name(style="color: #5956E9;") Bento
+								.teams__text “ Collab is fast. Files are  always up to date.  <br>It’s easy to share designs across the organization, so collaboration is easy ”
+								.teams__user
+									.teams__ava
+										img.teams__pic(src="img/ava-1.png" alt="")
+									.teams__box
+										.teams__man Emily
+										.teams__login Founder @Bento
+							.teams__slide
+								.teams__line(style="background-color: #5956E9;")
+								.teams__name(style="color: #C75C6F;") UI8
+								.teams__text “ Collab is fast. Files are  always up to date.  <br>It’s easy to share designs across the organization, so collaboration is easy ”
+								.teams__user
+									.teams__ava
+										img.teams__pic(src="img/ui8.png" alt="")
+									.teams__box
+										.teams__man Dash
+										.teams__login Founder @UI8
+							.teams__slide
+								.teams__line(style="background-color: #FAB8C4;")
+								.teams__name(style="color: #5956E9;") Bento
+								.teams__text “ Collab is fast. Files are  always up to date.  <br>It’s easy to share designs across the organization, so collaboration is easy ”
+								.teams__user
+									.teams__ava
+										img.teams__pic(src="img/ava-1.png" alt="")
+									.teams__box
+										.teams__man Emily
+										.teams__login Founder @Bento
+		.teams__circle.js-rellax(data-rellax-speed="1")
+	.speed
+		.speed__center.center
+			.speed__wrap
+				.speed__head(data-aos="animation-scale-y")
+					.speed__stage.stage Collab is fast, super fast.
+					h2.speed__title.title Speed up <br>your <br>workflow<span class="title__color">.</span>
+					.speed__text Essentially no lag, no matter the size of the file, even on mobile devices.
+				.speed__number(data-aos="animation-scale-y") <span>8.1</span>x
+		.speed__line
+			img.speed__pic(src="img/line.svg" alt="")
+		.speed__preview(data-aos)
+			.speed__graphic
+				img.speed__pic(src="img/graphic.png" alt="")
+			.speed__plant
+				img.speed__pic.js-parallax(data-scale="1.3" data-orientation="left" src="img/plant.png" alt="")
+		.speed__circles
+			.speed__circle.js-rellax(data-rellax-speed="-1")
+			.speed__circle.js-rellax(data-rellax-speed="1")
+			.speed__circle
+	.package.js-package
+		.package__center.center
+			.package__container
+				.package__wrap
+					.package__slider.js-package-slider
+						mixin packageSlide(title)
+							.package__slide
+								.package__row
+									.package__details(data-aos data-aos-duration="600" data-aos-delay="400")
+										.package__category
+											.package__icon
+												img.package__pic(src="img/smile-2.svg" alt="")
+											.package__text Awesome feature
+										h3.package__title.title.title_sm=title
+										.package__info It’s easy to share designs across the organization, so team collaboration is fast and easy.
+										.package__list
+											a.package__link(href="#")
+												.package__icon
+													img.package__pic(src="img/layout-1.svg" alt="")
+												.package__text Awesome website
+											a.package__link(href="#")
+												.package__icon
+													img.package__pic(src="img/layout-3.svg" alt="")
+												.package__text Stunning interface
+										.package__btns
+											.package__arrows
+												button.package__arrow.js-package-prev
+													+i('arrow-prev')
+												button.package__arrow.js-package-next
+													+i('arrow-next')
+											a.package__btn.btn.btn_purple(href="login.html") Get Started
+									.package__preview
+										img.package__pic(src="img/laptop.png" alt="")
+						+packageSlide('Ultimate features')
+						+packageSlide('Standard features')
+						+packageSlide('Ultimate features')
+						+packageSlide('Standard features')
+					.package__line
+						img.package__pic(src="img/line-1.svg" alt="")
+					.package__circle(data-aos data-aos-duration="600")
+				.package__circles
+					.package__circle
+					.package__circle
+	.demo
+		.demo__center.center
+			.demo__head(data-aos="animation-scale-y")
+				.demo__icon 🔥
+				.demo__info We offer flexible pricing options for freelancers and design teams.
+			.demo__list
+				.demo__item(data-aos="animation-translate-y")
+					h3.demo__title.title.title_sm Schedule  <br>Product <br>Demo
+					.demo__text Still not sure? Schedule a demo to see how Collab can help you get more done.
+					a.demo__btn.btn.btn_purple.js-popup-open(href="#popup-contact" data-effect="mfp-zoom-in") Schedule a Demo
+				.demo__item(data-aos="animation-translate-y" data-aos-delay="200")
+					h3.demo__title.title.title_sm Get <br>Started <br>Now
+					.demo__text Ready to revolutionize your design workflow? Try Collab for free for 30 days.
+					a.demo__btn.btn.btn_white.js-popup-open(href="#popup-contact" data-effect="mfp-zoom-in") Try free for 30 days
+		.demo__circle.js-rellax(data-rellax-speed="1")
+	.design
+		.design__center.center
+			.design__wrap(data-aos="animation-translate-y")
+				.design__stage.stage Design accordlogy
+				h2.design__title.title Enrich your design workflow<span class="title__color">.</span>
+				.design__info.info Design anything from simple icons to fully featured websites and applications.
+			.design__hand(data-aos data-aos-duration="600")
+				img.design__pic(src="img/hand-4.png" alt="")
+			.design__bg(data-aos data-aos-delay="400")
+				img.design__pic(src="img/design-pic.png" alt="")
+			.design__circles
+				.design__circle.js-rellax(data-rellax-speed="1")
+				.design__circle
+				.design__circle.js-rellax(data-rellax-speed=".5")
+			.design__body
+				a.design__scroll(href="#")
+					.design__icon
+						img.design__pic(src="img/scroll.svg" alt="")
+					.design__text Using Collab
+				.design__container
+					.design__slider.js-design-slider
+						mixin designSlide(src, category, info, text, delay)
+							.design__slide(data-aos="animation-translate-y" data-aos-delay=delay)
+								.design__view
+									.design__preview
+										img.design__pic(src=src alt="")
+								.design__details
+									.design__category=category
+									.design__info=info
+									.design__text=text
+									a.design__link(href="login.html") Get started
+										+i('arrow-right')
+						+designSlide('img/design-pic-1.png', 'Design', 'Automation Color Picker', 'Use the smart color picker to easily select and apply colors.', '0')
+						+designSlide('img/design-pic-2.png', 'Build', 'Component Builder Guide', 'Using the Component Builder with your projects.', '200')
+						+designSlide('img/design-pic-3.png', 'Ship', 'Cross-platform Deployment', 'Deploy your projects more efficiently for web & mobile.', '400')
+						+designSlide('img/design-pic-1.png', 'Design', 'Automation Color Picker', 'Use the smart color picker to easily select and apply colors.')
+						+designSlide('img/design-pic-2.png', 'Build', 'Component Builder Guide', 'Using the Component Builder with your projects.')
+	.details
+		.details__center.center
+			.details__head(data-aos="animation-scale-y")
+				h2.details__title.title Research & <br>background, summary<span class="title__color">.</span>
+				.details__info.info Collab is fast. Files are always up to date and ready for production
+			.details__row
+				.details__container
+					.details__slider.js-details-slider
+						.details__slide
+							.details__counter <span class="details__number">16</span> m
+							.details__text It’s easy to share designs across the organization, so collaboration is easy.
+							.details__control
+								button.details__play Play
+								a.details__link(href="#") Find out more
+						.details__slide
+							.details__counter <span class="details__number">16</span> m
+							.details__text It’s easy to share designs across the organization, so collaboration is easy.
+							.details__control
+								button.details__play Play
+								a.details__link(href="#") Find out more
+						.details__slide
+							.details__counter <span class="details__number">16</span> m
+							.details__text It’s easy to share designs across the organization, so collaboration is easy.
+							.details__control
+								button.details__play Play
+								a.details__link(href="#") Find out more
+						.details__slide
+							.details__counter <span class="details__number">16</span> m
+							.details__text It’s easy to share designs across the organization, so collaboration is easy.
+							.details__control
+								button.details__play Play
+								a.details__link(href="#") Find out more
+				.details__graphic
+					.details__mobile
+						img.details__pic(src="img/mobile.svg" alt="")
+						.details__box
+							.details__chart(data-aos data-aos-offset="0" data-aos-delay="300" data-aos-duration="1000")
+								img.details__pic(src="img/chart.svg" alt="")
+			.details__hand
+				img.details__pic.js-parallax(data-scale="1.2" data-orientation="up" src="img/hand-5.png" alt="")
+			.details__line
+				img.details__pic(src="img/line-2.svg" alt="")
+			.details__circles
+				.details__circle
+				.details__circle.js-rellax(data-rellax-speed="-.5")
+	.tool
+		.tool__center.center
+			.tool__container
+				.tool__wrap
+					h2.tool__title.title(data-aos="animation-scale-y") Ready to use the smartest design tool?
+					.tool__info.info(data-aos="animation-scale-y" data-aos-delay="150") We offer flexible pricing options for freelancers and design teams. 
+					.tool__btn(data-aos="animation-scale-y" data-aos-delay="300")
+						a.btn.btn_white.js-popup-open(href="#popup-contact" data-effect="mfp-zoom-in") Try free for 30 days
+				.tool__cloud
+					img.tool__pic.js-parallax(data-scale="1.5" data-orientation="right" src="img/cloud.png" alt="")
+	.roadmap
+		.roadmap__center.center
+			.roadmap__head
+				.roadmap__wrap(data-aos="animation-scale-y")
+					.roadmap__stage.stage Roadmap
+					h2.roadmap__title.title All systems are a go<span class="title__color">.</span>
+					.roadmap__info Find out where we are on the path to achieving the ultimate design tool.
+					select.roadmap__select
+						option Current
+						option Current
+						option Current
+				.roadmap__view(data-aos)
+					.roadmap__calendar
+						img.roadmap__pic(src="img/roadmap-pic.png" alt="")
+					.roadmap__bg
+						img.roadmap__pic.js-parallax(data-scale="1.5" data-orientation="left" src="img/roadmap-pic-1.png" alt="")
+			.roadmap__body
+				.roadmap__category Earlier
+				.roadmap__box
+					.roadmap__top
+						.roadmap__col
+							.roadmap__desc
+								.roadmap__category Q2
+								.roadmap__year 2020
+						.roadmap__col
+							.roadmap__desc
+								.roadmap__category Q3
+								.roadmap__year 2020
+						.roadmap__col
+							.roadmap__desc
+								.roadmap__category Q4
+								.roadmap__year 2020
+						.roadmap__col
+							.roadmap__desc
+								.roadmap__category Q1
+								.roadmap__year 2021
+					.roadmap__lines
+						.roadmap__line
+							.roadmap__progress(style="width: 66.66%;" data-aos) Collab Community
+						.roadmap__line
+							.roadmap__progress(style="width: 43%;" data-aos data-aos-delay="200") Collab Market
+						.roadmap__line
+							.roadmap__progress(style="width: 50%;" data-aos data-aos-delay="400") Collab Cloud
+				.roadmap__category Later
+		.roadmap__circles
+			.roadmap__circle
+			.roadmap__circle
+		.roadmap__preview(data-aos data-aos-duration="1000" data-aos-delay="300")
+			img.roadmap__pic(src="img/roadmap-pic-2.svg" alt="")
+	.accord.js-accord
+		.accord__center.center
+			.accord__row
+				.accord__details
+					.accord__top(data-aos="animation-scale-y")
+						.accord__title.title.title_sm Technological maturity.
+						.accord__text Collab is fast. Files are always up to date and ready for production. 
+					ul.accord__list(data-aos="animation-scale-y" data-aos-delay="200")
+						li Collab Cloud
+						li Collab Design
+						li Collab Share
+						li Collab Code
+				.accord__wrap
+					.accord__item.js-accord-item.active(data-aos="animation-scale-y")
+						.accord__head.js-accord-head
+							.accord__icon
+								img.accord__pic(src="img/layout-3.svg" alt="")
+							.accord__category In research
+						.accord__body.js-accord-body(style="display: block; background-image: url('img/accord-pic.png');")
+							ul.accord__desc
+								li 3+ user
+								li 5 TB of secure storage
+								li Premium productivity features and simple, secure file sharing
+					.accord__item.js-accord-item(data-aos="animation-scale-y")
+						.accord__head.js-accord-head
+							.accord__icon
+								img.accord__pic(src="img/layout-3.svg" alt="")
+							.accord__category Drafted
+						.accord__body.js-accord-body(style="background-image: url('img/accord-pic.png');")
+							ul.accord__desc
+								li 3+ user
+								li 5 TB of secure storage
+								li Premium productivity features and simple, secure file sharing
+					.accord__item.js-accord-item(data-aos="animation-scale-y")
+						.accord__head.js-accord-head
+							.accord__icon
+								img.accord__pic(src="img/layout-3.svg" alt="")
+							.accord__category In development
+						.accord__body.js-accord-body(style="background-image: url('img/accord-pic.png');")
+							ul.accord__desc
+								li 3+ user
+								li 5 TB of secure storage
+								li Premium productivity features and simple, secure file sharing
+					.accord__item.js-accord-item(data-aos="animation-scale-y")
+						.accord__head.js-accord-head
+							.accord__icon
+								img.accord__pic(src="img/layout-3.svg" alt="")
+							.accord__category Proposed
+						.accord__body.js-accord-body(style="background-image: url('img/accord-pic.png');")
+							ul.accord__desc
+								li 3+ user
+								li 5 TB of secure storage
+								li Premium productivity features and simple, secure file sharing
+					.accord__item.js-accord-item(data-aos="animation-scale-y")
+						.accord__head.js-accord-head
+							.accord__icon
+								img.accord__pic(src="img/layout-3.svg" alt="")
+							.accord__category Completed
+						.accord__body.js-accord-body(style="background-image: url('img/accord-pic.png');")
+							ul.accord__desc
+								li 3+ user
+								li 5 TB of secure storage
+								li Premium productivity features and simple, secure file sharing
+	.partners
+		.partners__center.center
+			.partners__head(data-aos="animation-scale-y")
+				.partners__stage.stage Clients
+				.partners__details
+					h2.partners__title.title More than 68,219 designers use Collab.
+					.partners__info.info Design anything from simple icons to fully featured websites and applications.
+			.partners__list
+				.partners__item(data-aos)
+					img.partners__pic(src="img/waves.svg" alt="")
+				.partners__item(data-aos data-aos-delay="150")
+					img.partners__pic(src="img/goldlines.svg" alt="")
+				.partners__item(data-aos data-aos-delay="300")
+					img.partners__pic(src="img/oliver.svg" alt="")
+				.partners__item(data-aos data-aos-delay="450")
+					img.partners__pic(src="img/duotrip.svg" alt="")
+				.partners__item(data-aos)
+					img.partners__pic(src="img/rota-show.svg" alt="")
+				.partners__item(data-aos data-aos-delay="150")
+					img.partners__pic(src="img/travelers.svg" alt="")
+				.partners__item(data-aos data-aos-delay="300")
+					img.partners__pic(src="img/velocity-9.svg" alt="")
+				.partners__item(data-aos data-aos-delay="450")
+					img.partners__pic(src="img/foxds.svg" alt="")
+		.partners__preview(data-aos data-aos-duration="1000")
+			img.partners__pic(src="img/partners-pic.svg" alt="")
+		.partners__circle.js-rellax(data-rellax-speed=".6")
+	.quality
+		.quality__head
+			.quality__center.center
+				.quality__top(data-aos="animation-scale-y")
+					.quality__stage.stage Effortless
+					h2.quality__title.title Go from ideation to <br>design and done<span class="title__color">.</span>
+				.quality__info.info(data-aos="animation-scale-y" data-aos-delay="200") Easily create truly responsive components while deploying production-ready code.
+			.quality__line
+				img.quality__pic(src="img/line-3.svg" alt="")
+			.quality__preview
+				img.quality__pic.js-parallax(data-scale="1.2" data-orientation="left" src="img/lamp.png" alt="")
+		.quality__body
+			.quality__col
+				.quality__item(data-aos="animation-scale-x-left")
+					.quality__icon
+						img.quality__pic(src="img/camera-big.png" alt="")
+					.quality__details
+						.quality__category Assets Library
+						.quality__text Get access to huge library of ready-made components and illustrations, free to use on all your projects.
+						a.quality__link(href="#") Learn more
+							+i('arrow-right')
+			.quality__col
+				.quality__item(data-aos="animation-scale-x-right" data-aos-delay="200")
+					.quality__icon
+						img.quality__pic(src="img/clock-big.png" alt="")
+					.quality__details
+						.quality__category Save Time
+						.quality__text Save tons of time by eliminating repetitive day-to-day tasks and slow load times. 
+						a.quality__link(href="#") Learn more
+							+i('arrow-right')
+			.quality__col
+				.quality__item(data-aos="animation-scale-x-left")
+					.quality__icon
+						img.quality__pic(src="img/cup-big.png" alt="")
+					.quality__details
+						.quality__category Relax
+						.quality__text Let your personalized Collab assistant do the heavy lifting while you focus on creating. Say good bye to code 👋
+						a.quality__link(href="#") Learn more
+							+i('arrow-right')
+			.quality__col
+				.quality__item(data-aos="animation-scale-x-right" data-aos-delay="200")
+					.quality__icon
+						img.quality__pic(src="img/chatbox-big.png" alt="")
+					.quality__details
+						.quality__category Support
+						.quality__text Got stuck or need any help? Our support team is online 24/7 to help assist you with any issues.
+						a.quality__link(href="#") Learn more
+							+i('arrow-right')
+		.quality__circles
+			.quality__circle 
+			.quality__circle 
+	.showcase
+		.showcase__center.center
+			.showcase__wrap
+				.showcase__top(data-aos="animation-scale-y")
+					.showcase__stage.stage Showcase
+					h2.showcase__title.title Created with  Collab<span class="title__color">.</span>
+				.showcase__info.info(data-aos="animation-scale-y" data-aos-delay="150") See what designers around the world are building with Collab.
+				.showcase__btn(data-aos="animation-scale-y" data-aos-delay="300")
+					button.btn.btn_purple View More Projects
+		.showcase__bg
+			img.showcase__pic(src="img/showcase-circle.svg" alt="")
+		.showcase__circles
+			.showcase__circle
+			.showcase__circle
+		.showcase__list
+			.showcase__preview
+				img.showcase__pic.js-parallax(data-scale="1.3" data-orientation="right" src="img/group-1.png" alt="")
+			.showcase__preview
+				img.showcase__pic.js-parallax(data-scale="1.3" data-orientation="left" src="img/group-2.png" alt="")
+	.offer
+		.offer__center.center
+			.offer__container
+				.offer__head
+					h2.offer__title.title(data-aos="animation-scale-y") Ready to use the smartest design tool?
+					.offer__info.info(data-aos="animation-scale-y" data-aos-delay="150") We offer flexible pricing options for freelancing and design teams.
+					.offer__btn(data-aos="animation-scale-y" data-aos-delay="300")
+						a.btn.btn_white.js-popup-open(href="#popup-contact" data-effect="mfp-zoom-in") Try free for 30 days
+				.offer__circles
+					.offer__circle
+					.offer__circle
+			.offer__circle
+		.offer__view(data-aos data-aos-delay="400" data-aos-offset="0")
+			.offer__preview
+				img.offer__pic(src="img/offer-pic-1.png" alt="")
+			.offer__preview
+				img.offer__pic(src="img/offer-pic-2.png" alt="")
+			.offer__preview
+				img.offer__pic(src="img/offer-pic-3.png" alt="")
+			.offer__preview
+				img.offer__pic(src="img/offer-pic-4.png" alt="")
+			.offer__preview
+				img.offer__pic(src="img/offer-pic-5.png" alt="")
+	.footer.js-footer
+		.footer__center.center
+			.footer__row
+				.footer__col
+					a.footer__logo(href="#")
+						img.footer__pic(src="img/logo-dark.svg" alt="")
+				.footer__col.js-footer-col
+					.footer__category.js-footer-category Company
+						+i('arrow-down') 
+					.footer__menu.js-footer-menu
+						a.footer__link(href="#") About us
+						a.footer__link(href="#") Jobs
+						a.footer__link(href="#") Press
+						a.footer__link(href="#") Blog
+				.footer__col.js-footer-col
+					.footer__category.js-footer-category Support
+						+i('arrow-down')
+					.footer__menu.js-footer-menu
+						a.footer__link(href="#") Contact us
+						a.footer__link(href="#") Cookies
+						a.footer__link(href="#") Privacy & terms
+						a.footer__link(href="#") Sitemap
+				.footer__col.js-footer-col
+					.footer__category.js-footer-category Community
+						+i('arrow-down')
+					.footer__menu.js-footer-menu
+						a.footer__link(href="#") Developers
+						a.footer__link(href="#") Designers
+						a.footer__link(href="#") Forum
+						a.footer__link(href="#") UI8
+			.footer__bottom
+				a.footer__company(href="https://ui8.net/" target="_blank")
+					img.footer__pic(src="img/ui8.svg" alt="")
+				.footer__copyright © 2020, UI8 LLC.
+				a.footer__scroll.js-link-scroll(href="#header")
+					.footer__icon
+						img.footer__pic(src="img/scroll.svg" alt="")
+					.footer__text Back to top
+	.popup.mfp-hide#popup-contact
+		.popup__wrap
+			.popup__head
+				a.popup__logo(href="#")
+					img.popup__pic(src="img/logo.svg" alt="")
+			.popup__body
+				.popup__title.title Get in touch<span class="title__color">.</span>
+				.popup__info Enter your detail below
+				form.popup__form
+					.popup__field.field
+						.field__label Name
+						.field__wrap
+							.field__icon
+								img.field__pic(src="img/user.svg" alt="")
+							input.field__input(type="text" name="name" placeholder="Name")
+					.popup__field.field
+						.field__label Email
+						.field__wrap
+							.field__icon
+								img.field__pic(src="img/sending-mail.svg" alt="")
+							input.field__input(type="email" name="email" placeholder="Email address")
+					.popup__field.field.field_textarea
+						.field__label Message
+						.field__wrap
+							.field__icon
+								img.field__pic(src="img/message.svg" alt="")
+							textarea.field__textarea(name="Message" placeholder="Message")
+					button.popup__btn.btn.btn_purple(type="submit") Send now
+				.popup__circles
+					.popup__circle
+					.popup__circle
+			.popup__bg
+				.popup__preview
+					img.popup__pic(src="img/popup-pic-1.png" alt="")
+				.popup__preview
+					img.popup__pic(src="img/cursor-1.png" alt="")
+
+
+
+

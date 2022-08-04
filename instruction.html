@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Index Page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <script>
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta)
+      {
+        if (screen.width < 375)
+        {
+          var newScale = screen.width / 375;
+          viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+        }
+        else
+        {
+          viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+    <div class="center" style="max-width: 1230px; margin: 0 auto; padding: 30px;">
+      <div class="content" style="font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.5;">
+        <section style="margin-bottom: 40px;">
+          <h1 style="margin: 0 0 15px; font-size: 24px;">Getting started</h1>
+          <p>In this page we'll cover the folder structure, setting up your development workflow, how to compile, customize and extend the theme.</p>
+        </section>
+        <section style="margin-bottom: 40px;">
+          <h2 style="margin: 0 0 15px; font-size: 20px; font-weight: 600;">— Folder structure</h2>
+          <ul style="line-height: 1.7;">
+            <li>template/<ul>
+                <li>build/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">compiled theme files</span></li>
+                <li>src/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">source files for development</span>
+                  <ul>
+                    <li>fonts/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">connect fonts locally</span></li>
+                    <li>img/ </li>
+                    <li>icons/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">icons for svg-sprite</span></li>
+                    <li>js/</li>
+                    <li>sass/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">preprocessor CSS</span></li>
+                    <li>templates/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">preprocessor HTML</span>
+                      <ul>
+                        <li>index.pug/</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>node_modules/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">where npm installs dependencies</span></li>
+                <li>gulp/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">settings gulp</span></li>
+                <li>gulpfile.js/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">build tasks for developments</span></li>
+                <li>package.json/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">list of dependencies</span></li>
+                <li>package-lock.json/ <span style="padding-left: 10px; font-size: 14px; color: #6A5ACD;">dependencies version tree</span></li>
+                <li>README.md</li>
+              </ul>
+            </li>
+          </ul>
+          <p>You have 2 options for using the template: </p>
+          <ol style="line-height: 1.7;">
+            <li>Use files from the build folder - this will allow you not to start the project, but immediately work with CSS, JS, HTML, but you will not be able to use preprocessors, sprites, etc and you will have to manually update the tab in the browser to see the changes, what you put in the files.</li>
+            <li>Run the project, this will allow you to use all the functions of the template.</li>
+          </ol>
+          <p><span style="color: #A52A2A;">Notice:</span> keep in mind that if you work on files in folder src and then switch to compiling with Gulp you would lose your changes as the files would be re-generated.</p>
+        </section>
+        <section style="margin-bottom: 40px;">
+          <h2 style="margin: 0 0 15px; font-size: 20px; font-weight: 600;">— Development setup</h2>
+          <ul style="line-height: 1.7;">
+            <li style="margin-bottom: 5px;"><a style="text-decoration: none; color: #00BFFF;" href="https://nodejs.org/download/release/v10.15.3/" target="_blank">Download and install Node.js (v.10.15.3)</a> if you don't have it already installed in your computer. The template uses npm to manage the dependencies listed in package.json.</li>
+            <li style="margin-bottom: 5px;">Unzip the theme and then open your terminal, navigate to the root /template directory.</li>
+            <li style="margin-bottom: 5px;">Install the Gulp Command Line Interface to be able to use Gulp: <br><code style="padding: 1px 15px 4px; border-radius: 5px; background-color: rgba(138, 43, 226, .1); font-family: 'Lato', sans-serif; letter-spacing: .7px; color: #8A2BE2;">npm install gulp-cli -g</code></li>
+            <li style="margin-bottom: 5px;">Making sure you're at the root /template directory, install the local dependencies: <br><code style="padding: 1px 15px 4px; border-radius: 5px; background-color: rgba(138, 43, 226, .1); font-family: 'Lato', sans-serif; letter-spacing: .7px; color: #8A2BE2;">npm install</code></li>
+            <li>That's it!</li>
+          </ul>
+        </section>
+        <section style="margin-bottom: 40px;">
+          <h2 style="margin: 0 0 15px; font-size: 20px; font-weight: 600;">— Compiling with Gulp</h2>
+          <p>The template uses Gulp to automate the development workflow. With your command line on the root /template directory you can use the following commands:</p>
+          <ul style="line-height: 1.7;">
+            <li style="margin-bottom: 10px;"> <code style="padding: 1px 15px 4px; border-radius: 5px; background-color: rgba(138, 43, 226, .1); font-family: 'Lato', sans-serif; letter-spacing: .7px; color: #8A2BE2;">gulp</code>
+              <ul>
+                <li>This is the default task: Compiles the src files into the build folder, opens a tab in your browser, and watches for any changes made in the src folder - SASS, JS, templates(PUG), images, etc. When updates are made it automatically re-compiles and reloads your browser. <br>To stop the server and terminate the gulp command just hit CTRL + C.</li>
+              </ul>
+            </li>
+            <li><code style="padding: 1px 15px 4px; border-radius: 5px; background-color: rgba(138, 43, 226, .1); font-family: 'Lato', sans-serif; letter-spacing: .7px; color: #8A2BE2;">gulp build</code>
+              <ul>
+                <li>Compiles the src files into the build folder.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section style="margin-bottom: 40px;">
+          <h2 style="margin: 0 0 15px; font-size: 20px; font-weight: 600;">— Preprocessor SASS(CSS) and PUG(HTML)</h2>
+          <p style="margin-boottom: 15px;">The template uses SASS and PUG preprocessors, they speed up and facilitate the work.</p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
