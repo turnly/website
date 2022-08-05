@@ -1,7 +1,7 @@
 <svg width="1100" height="837" viewBox="0 0 1100 837" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="550" cy="287" r="550" fill="#5956E9"/>
+<circle cx="550" cy="287" r="550" fill="#06615A"/>
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="-263" width="1100" height="1100">
-<circle cx="550" cy="287" r="550" fill="#5956E9"/>
+<circle cx="550" cy="287" r="550" fill="#06615A"/>
 </mask>
 <g mask="url(#mask0)">
 <g style="mix-blend-mode:overlay" opacity="0.2">

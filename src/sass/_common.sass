@@ -24,24 +24,24 @@
 =fd
   font-family: 'DM Sans', sans-serif
 =f
-  font-family: 'Poppins', sans-serif
+  font-family: 'DM Sans', sans-serif
 
 $bl: #000
 $dark: #292930
 $bg-dark: #27272E
-$purple: #5956E9
+$purple: #06615A
 $gray: #999FAE
 $gray-dark: #525260
 $gray-light: #ECF2F6
 $white: #fff
 $blue: #2522BA
-$pink: #FAB8C4
-$yellow: #FFDC60
+$pink: #5ACE71
+$yellow: #FFD8B3
 $red: #C75C6F
 $green: #A4B16E
 
 html
-  // height: 100% 
+  // height: 100%
   &.no-scroll
     overflow: hidden
 
@@ -49,11 +49,11 @@ body
   min-width: 375px
   +f
   font-size: 16px
-  line-height: 1.5 
+  line-height: 1.5
   letter-spacing: -0.025em
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
-  color: $dark 
+  color: $dark
   +m
     font-size: 15px
   &.no-scroll
@@ -64,13 +64,13 @@ body
 
 .btn
   min-width: 178px
-  height: 72px
-  border-radius: 20px
+  height: 52px
+  border-radius: 0
   +f
   font-size: 16px
-  font-weight: 500 
+  font-weight: 500
   letter-spacing: -.04em
-  transition: all .25s 
+  transition: all .25s
   &__pic,
   &__text
     display: inline-block
@@ -78,19 +78,19 @@ body
   &__pic
     max-width: 32px
     +nl
-      margin-right: 16px 
+      margin-right: 16px
   &_purple
-    background: $purple 
-    color: $white 
+    background: $purple
+    color: $white
   &_pink
-    background: $pink 
-    color: $blue 
+    background: $pink
+    color: $white
   &_white
     background: $white
     color: $blue
   &_border
-    border: 1px solid #E3E6E9   
-    color: $blue 
+    border: 1px solid #E3E6E9
+    color: $blue
   &:hover
     transform: translateY(-2px)
   &:active
@@ -105,9 +105,9 @@ body
   margin: 0 auto
   padding: 0 72px
   +t
-    padding: 0 40px 
+    padding: 0 40px
   +m
-    padding: 0 32px 
+    padding: 0 32px
 
 .header
   position: absolute
@@ -117,28 +117,28 @@ body
   z-index: 10
   padding: 48px 0
   +d
-    padding: 40px 0 
+    padding: 40px 0
   +t
-    padding: 32px 0 
+    padding: 32px 0
   +m
-    padding: 40px 0 
+    padding: 40px 0
   & > &__center
     display: flex
     align-items: center
   &__center
     max-width: 1440px
-    padding: 0 100px 
+    padding: 0 100px
     +x
-      padding: 0 72px 
+      padding: 0 72px
     +d
-      padding: 0 36px 
+      padding: 0 36px
   &__logo
     margin-right: 60px
     font-size: 0
     +m
       position: relative
       z-index: 15
-      margin: 0 auto 
+      margin: 0 auto
   &__logo &__pic
     width: 145px
     +m
@@ -159,17 +159,17 @@ body
     span
       display: block
       height: 2px
-      border-radius: 2px 
+      border-radius: 2px
       background: $dark
       transition: transform .3s, width .3s, background .3s
     &:before,
     &:after
-      content: '' 
+      content: ''
     &:before,
     span
       width: 24px
     &:before
-      margin: 0 auto 
+      margin: 0 auto
     &:after
       width: 15px
       margin: 0 auto 0 0
@@ -191,7 +191,7 @@ body
       left: 0
       right: 0
       z-index: 10
-      min-height: 100vh 
+      min-height: 100vh
       background: $white
       padding: 125px 0 40px
       transform: translateX(-100%)
@@ -218,18 +218,18 @@ body
     +nl
       margin-right: 57px
       +m
-        margin: 0 0 24px 
+        margin: 0 0 24px
   &__item[href],
   &__head
     position: relative
     padding: 8px 0
-    letter-spacing: -0.04em 
-    color: $gray 
-    transition: color .25s 
+    letter-spacing: -0.04em
+    color: $gray
+    transition: color .25s
     +m
       padding: 0
       font-size: 18px
-      letter-spacing: -0.025em 
+      letter-spacing: -0.025em
     &:before
       content: ""
       position: absolute
@@ -238,15 +238,15 @@ body
       bottom: 0
       height: 2px
       width: 0
-      margin: 0 auto 
+      margin: 0 auto
       background: $purple
-      border-radius: 2px 
-      transition: width .25s 
+      border-radius: 2px
+      transition: width .25s
   &__item[href]
     +hover
-      color: $dark 
+      color: $dark
       &:before
-        width: 100% 
+        width: 100%
   &__head
     display: flex
     align-items: center
@@ -257,7 +257,7 @@ body
       margin-left: 11px
       font-size: 8px
       fill: $gray
-      transition: all .25s 
+      transition: all .25s
       +m
         display: none
     &:before
@@ -266,14 +266,14 @@ body
   &__item
     +hover
       .header__head
-        color: $dark 
+        color: $dark
         .icon
           fill: $purple
         &:before
           width: calc(100% - 24px)
     &.active
       .header__head
-        color: $dark 
+        color: $dark
         .icon
           fill: $purple
         &:before
@@ -283,8 +283,8 @@ body
     top: calc(100% - 48px)
     left: 0
     right: 0
-    padding-top: 23px 
-    transform: translateY(20px) 
+    padding-top: 23px
+    transform: translateY(20px)
     visibility: hidden
     opacity: 0
     transition: all .25s
@@ -295,7 +295,7 @@ body
       .header__body
         transform: translateY(0)
         visibility: visible
-        opacity: 1 
+        opacity: 1
     &.active
       .header__body
         transform: translateY(0)
@@ -303,12 +303,12 @@ body
         opacity: 1
   &__row
     display: flex
-    padding: 65px 0 
-    background: $white 
+    padding: 65px 0
+    background: $white
     border-radius: 32px
     box-shadow: 0 15px 40px rgba($bl, .1)
     +x
-      padding: 55px 0  
+      padding: 55px 0
     +t
       padding: 40px 0
   &__col
@@ -357,38 +357,38 @@ body
           left: -3px
           width: 70px
     +nl
-      border-right: 1px solid rgba($gray, .2) 
+      border-right: 1px solid rgba($gray, .2)
   &__category
     margin-bottom: 35px
     +fd
     font-size: 20px
-    font-weight: 500 
+    font-weight: 500
     line-height: 1
   &__box
     display: block
     position: relative
     padding-left: 56px
-    font-weight: 500 
+    font-weight: 500
     +nl
       margin-bottom: 35px
   &__preview
     position: absolute
-    font-size: 0 
+    font-size: 0
   &__preview &__pic
-    width: 100% 
+    width: 100%
   &__info
     margin-bottom: 2px
     font-size: 15px
-    color: $dark 
-    transition: color .25s 
+    color: $dark
+    transition: color .25s
   &__text
     font-size: 13px
-    color: $gray 
-    transition: color .25s 
+    color: $gray
+    transition: color .25s
   &__box:hover &__info
-    color: $purple 
+    color: $purple
   &__box:hover &__text
-    color: rgba($gray, .4)  
+    color: rgba($gray, .4)
   &__search
     position: relative
     margin-right: 40px
@@ -405,15 +405,15 @@ body
     width: 24px
     height: 24px
     font-size: 0
-    transition: opacity .25s 
+    transition: opacity .25s
     .icon
       font-size: 20px
       fill: $white
       transition: fill .25s
       +x
-        fill: $dark 
+        fill: $dark
     &:hover
-      opacity: .8 
+      opacity: .8
   &__search.active &__open .icon
     fill: $purple
   &__field
@@ -437,12 +437,12 @@ body
     height: 34px
     padding: 0 35px 0 15px
     border-radius: 5px
-    box-shadow: 0 2px 5px rgba($dark, .1) 
+    box-shadow: 0 2px 5px rgba($dark, .1)
     +f
     font-size: 14px
     color: $dark
     +placeholder
-     color: $gray   
+     color: $gray
   &__btn.btn
     min-width: 180px
     +t
@@ -454,10 +454,10 @@ body
     right: 0
     bottom: 0
     z-index: 8
-    background: rgba(#000, .7) 
+    background: rgba(#000, .7)
     visibility: hidden
     opacity: 0
-    transition: all .25s 
+    transition: all .25s
     &.show
       +t
         visibility: visible
@@ -466,8 +466,8 @@ body
 .title
   position: relative
   +fd
-  font-size: 80px 
-  font-weight: 500 
+  font-size: 80px
+  font-weight: 500
   line-height: 1
   letter-spacing: -.025em
   +d
@@ -478,12 +478,12 @@ body
     position: relative
     &:before
       content: ""
-      position: absolute 
+      position: absolute
       left: calc(100% + 10px)
       bottom: 30px
       width: 72px
       height: 8px
-      background: $purple 
+      background: $purple
       +m
         left: calc(100% + 7px)
         bottom: 19px
@@ -496,9 +496,9 @@ body
     display: block
     opacity: 0
     transform: translateY(110%)
-    transition: transform .4s, opacity .4s 
+    transition: transform .4s, opacity .4s
   &__color
-    color: $purple 
+    color: $purple
   &_sm
     font-size: 40px
     letter-spacing: -.045em
@@ -515,11 +515,11 @@ body
       font-size: 60px
   &[data-aos]
     .title__box:nth-child(2) .title__text
-      transition-delay: .2s 
+      transition-delay: .2s
     .title__box:nth-child(3) .title__text
-      transition-delay: .4s 
+      transition-delay: .4s
     .title__box:nth-child(4) .title__text
-      transition-delay: .6s 
+      transition-delay: .6s
     &.aos-animate
       .title__text
         transform: translateY(0)
@@ -527,9 +527,9 @@ body
 
 .info
   font-size: 18px
-  letter-spacing: 0 
-  line-height: (27/18) 
-  color: $gray 
+  letter-spacing: 0
+  line-height: (27/18)
+  color: $gray
   +m
     font-size: 16px
     line-height: 1.5
@@ -537,7 +537,7 @@ body
 .stage
   +fd
   font-size: 20px
-  font-weight: 700 
+  font-weight: 700
   line-height: 1
   +m
     font-size: 16px
@@ -547,11 +547,11 @@ body
   z-index: 2
   padding: 220px 0 100px
   +m
-    padding: 170px 0 35px  
+    padding: 170px 0 35px
   &__wrap
     max-width: 440px
     +m
-      max-width: 100% 
+      max-width: 100%
   &__title
     margin-bottom: 21px
     +m
@@ -582,9 +582,6 @@ body
   &__control &__icon
     margin-top: -3px
   &__btn
-    height: 82px
-    +m
-      height: 64px
     +nl
       margin-right: 32px
       +m
@@ -593,10 +590,10 @@ body
     display: flex
     align-items: center
     font-weight: 500
-    color: $gray  
+    color: $gray
     transition: opacity .25s
     &:hover
-      opacity: .8 
+      opacity: .8
       +m
         opacity: 1
   &__icon
@@ -608,7 +605,7 @@ body
       width: 64px
       height: 64px
       border: 1px solid #E3E6E9
-      border-radius: 16px 
+      border-radius: 16px
       font-size: 0
   &__control &__icon
     +m
@@ -616,10 +613,10 @@ body
   &__view
     position: absolute
     top: 206px
-    right: calc(50% - 686px) 
+    right: calc(50% - 686px)
     font-size: 0
     +t
-      right: calc(50% - 700px) 
+      right: calc(50% - 700px)
     +m
       position: relative
       top: auto
@@ -631,14 +628,14 @@ body
       width: 370px
       +m
         top: 60px
-        right: calc(50% - 200px) 
+        right: calc(50% - 200px)
         width: 110px
     &:nth-child(2)
       left: -2px
       bottom: 165px
       width: 235px
       +m
-        left: calc(50% - 225px) 
+        left: calc(50% - 225px)
         bottom: 95px
         width: 130px
     &:nth-child(3)
@@ -646,7 +643,7 @@ body
       bottom: 10px
       width: 98px
       +m
-        right: calc(50% - 135px) 
+        right: calc(50% - 135px)
         bottom: 6px
         width: 45px
     &:nth-child(4)
@@ -656,7 +653,7 @@ body
       +m
         width: auto
         margin: 0 -90px 0 -42px
-        text-align: center 
+        text-align: center
         .main__pic
           max-width: 420px
     +nl
@@ -665,7 +662,7 @@ body
     &[data-aos]
       .main__preview
         opacity: 0
-        transition: all .5s 
+        transition: all .5s
         &:first-child
           transform: translate(40px,-40px)
         &:nth-child(2)
@@ -676,22 +673,22 @@ body
           transform: translateY(50px)
         +nl
           z-index: 2
-      &.aos-animate 
+      &.aos-animate
         .main__preview
           opacity: 1
           &:first-child
-            transition-delay: .3s 
+            transition-delay: .3s
             transform: translate(0,0)
           &:nth-child(2)
-            transition-delay: .45s 
+            transition-delay: .45s
             transform: translateX(0) skewX(0)
           &:nth-child(3)
-            transition-delay: .15s 
+            transition-delay: .15s
             transform: translateX(0)
           &:nth-child(4)
             transform: translateY(0)
   &__view &__pic
-    width: 100% 
+    width: 100%
   &__circles
     +coverdiv
     z-index: -1
@@ -701,13 +698,13 @@ body
     &:first-child
       top: -200px
       left: -200px
-      width: 400px  
-      height: 400px 
-      background: $yellow 
+      width: 400px
+      height: 400px
+      background: $yellow
       +x
         top: -134px
         left: -134px
-        width: 268px  
+        width: 268px
         height: 268px
       +m
         display: none
@@ -716,7 +713,7 @@ body
       left: calc(50% - 620px)
       width: 48px
       height: 48px
-      background: $pink   
+      background: $pink
     &:nth-child(3)
       left: 46%
       top: 229px
@@ -744,31 +741,31 @@ body
         width: 24px
         height: 24px
     &:nth-child(5)
-      right: calc(50% - 250px) 
+      right: calc(50% - 250px)
       bottom: -90px
       z-index: 2
       width: 180px
       height: 180px
       background: $pink
       +d
-        right: calc(50% - 250px) 
+        right: calc(50% - 250px)
         bottom: -70px
         z-index: 2
         width: 140px
         height: 140px
       +m
-        right: -90px 
+        right: -90px
         top: 740px
         width: 180px
         height: 180px
     &:nth-child(6)
       top: -98px
-      right: calc(50% - 1330px) 
+      right: calc(50% - 1330px)
       width: 1220px
       height: 1220px
       background: $purple
       +x
-        right: calc(50% - 1480px) 
+        right: calc(50% - 1480px)
       +d
         top: -47px
         right: calc(50% - 1252px)
@@ -783,7 +780,7 @@ body
         height: 170px
     &:nth-child(7)
       top: 57%
-      right: calc(50% - 594px) 
+      right: calc(50% - 594px)
       z-index: 2
       width: 103px
       height: 103px
@@ -812,12 +809,12 @@ body
       margin-bottom: 135px
   &__stage
     flex-shrink: 0
-    width: 268px  
+    width: 268px
     padding-top: 7px
     +d
       width: 216px
     +m
-      width: 100% 
+      width: 100%
       margin-bottom: 16px
   &__title
     margin-bottom: 48px
@@ -825,11 +822,11 @@ body
       margin-bottom: 32px
   &__info
     max-width: 505px
-    color: rgba($white, .5) 
+    color: rgba($white, .5)
     +m
-      max-width: 100% 
+      max-width: 100%
     +a
-      max-width: 250px 
+      max-width: 250px
   &__body
     position: relative
     padding-left: 268px
@@ -854,17 +851,17 @@ body
     +d
       margin: 0 -55px
     +m
-      margin: 0 -10px  
+      margin: 0 -10px
   &__slider
     visibility: hidden
     &.slick-initialized
       visibility: visible
   &__slide
-    padding: 0 65px 
+    padding: 0 65px
     +d
       padding: 0 55px
     +m
-      padding: 0 10px  
+      padding: 0 10px
     &:first-child,
     &:nth-child(3),
     &:nth-child(5)
@@ -885,20 +882,20 @@ body
     position: absolute
     font-size: 0
   &__pic
-    width: 100% 
+    width: 100%
   &__category
     margin-bottom: 35px
     +fd
     font-size: 24px
     font-weight: 500
     line-height: 1.4
-    letter-spacing: -.04em  
+    letter-spacing: -.04em
     +d
       margin-bottom: 24px
       font-size: 20px
   &__text
     margin-bottom: 40px
-    color: rgba($white, .5) 
+    color: rgba($white, .5)
     +d
       margin-bottom: 32px
       font-size: 15px
@@ -907,8 +904,8 @@ body
   &__link
     position: relative
     display: inline-block
-    font-weight: 500 
-    color: rgba($white, .5) 
+    font-weight: 500
+    color: rgba($white, .5)
     transition: all .25s
     +m
       font-size: 16px
@@ -920,10 +917,10 @@ body
       width: 0
       height: 1px
       background: $white
-      transition: width .25s 
+      transition: width .25s
     &:hover
       padding-left: 50px
-      color: $white 
+      color: $white
       &:before
         width: 34px
   &__status
@@ -937,7 +934,7 @@ body
     font-size: 14px
     font-weight: 500
     +d
-      bottom: 169px 
+      bottom: 169px
     +t
       bottom: 126px
     +m
@@ -954,14 +951,14 @@ body
       transform: translate(-50%,-50%)
       width: 40px
       height: 1px
-      background: $white 
+      background: $white
   &__bg
     position: absolute
     top: 0
-    left: calc(50% - 1142px) 
+    left: calc(50% - 1142px)
     font-size: 0
     +d
-      left: calc(50% - 1042px) 
+      left: calc(50% - 1042px)
       width: 1100px
     +m
       top: -30px
@@ -969,7 +966,7 @@ body
       right: -245px
       width: 915px
     &[data-aos]
-      transform: rotate(30deg) 
+      transform: rotate(30deg)
       &.aos-animate
         transform: rotate(0)
   &__circle
@@ -979,14 +976,14 @@ body
     width: 268px
     height: 268px
     border-radius: 50%
-    background: $gray-dark 
+    background: $gray-dark
     +d
       right: calc(50% - 590px)
     +m
       top: 37px
       right: -200px
   .status__all
-    color: rgba($white, .3)  
+    color: rgba($white, .3)
   .slick-arrow
     position: absolute
     bottom: 6px
@@ -995,7 +992,7 @@ body
     border-radius: 50%
     border: 1px solid rgba($white, .2)
     font-size: 0
-    transition: all .25s 
+    transition: all .25s
     +m
       top: -88px
       bottom: auto
@@ -1004,7 +1001,7 @@ body
       fill: $white
     &:hover
       background: $purple
-      border-color: $purple  
+      border-color: $purple
   .slick-prev
     left: -203px
     +d
@@ -1012,19 +1009,19 @@ body
     +m
       left: 10px
   .slick-next
-    left: -146px 
+    left: -146px
     +d
       left: -104px
     +m
       left: 67px
-     
+
 .access
   position: relative
-  padding: 236px 0 0 
-  background: #ECF2F6 
+  padding: 236px 0 0
+  background: #ECF2F6
   text-align: center
   +m
-    padding: 180px 0 80px 
+    padding: 180px 0 80px
   &__view
     position: relative
     z-index: 4
@@ -1033,12 +1030,12 @@ body
     margin-bottom: 137px
     font-size: 0
     +m
-      margin: 0 -60px 10px 55px 
+      margin: 0 -60px 10px 55px
       text-align: center
     &[data-aos]
       .access__preview
         opacity: 0
-        transition: all .5s 
+        transition: all .5s
         &:first-child
           transform: translateY(40px)
         &:nth-child(2)
@@ -1047,16 +1044,16 @@ body
           transform: translateX(-40px) skewX(10deg)
         +nf
           z-index: 2
-      &.aos-animate 
+      &.aos-animate
         .access__preview
           opacity: 1
           &:first-child
             transform: translateY(0)
           &:nth-child(2)
-            transition-delay: .2s 
+            transition-delay: .2s
             transform: translate(0,0)
           &:nth-child(3)
-            transition-delay: .4s 
+            transition-delay: .4s
             transform: translateX(0) skewX(0)
   &__preview
     &:first-child
@@ -1083,7 +1080,7 @@ body
     +nf
       position: absolute
   &__pic
-    width: 100% 
+    width: 100%
   &__circles
     +coverdiv
     z-index: 2
@@ -1107,7 +1104,7 @@ body
       z-index: 2
       width: 603px
       height: 603px
-      background: rgba($white, .3)  
+      background: rgba($white, .3)
       +m
         top: 160px
         width: 311px
@@ -1116,23 +1113,23 @@ body
       top: 80px
       width: 723px
       height: 723px
-      background: rgba($white, .3) 
+      background: rgba($white, .3)
       +m
         display: none
     &[data-aos]
       transform: translateX(-50%) scale(.5)
       opacity: 0
       transition-property: transform, opacity
-      &.aos-animate 
+      &.aos-animate
         transform: translateX(-50%) scale(1)
-        opacity: 1 
+        opacity: 1
   &__cloud
     position: absolute
     z-index: 3
     &:first-child
       top: 230px
       left: calc(50% - 422px)
-      width: 175px  
+      width: 175px
       +m
         top: 80px
         left: -50px
@@ -1155,10 +1152,10 @@ body
     &:nth-child(2),
     &:nth-child(3),
     &:nth-child(4)
-      background: $white 
+      background: $white
     &:first-child
       top: 260px
-      left: calc(50% - 619px) 
+      left: calc(50% - 619px)
       width: 16px
       height: 16px
       +m
@@ -1177,7 +1174,7 @@ body
       top: 124px
       left: calc(50% - 365px)
       width: 32px
-      height: 32px 
+      height: 32px
       +m
         top: 360px
         left: 35px
@@ -1198,7 +1195,7 @@ body
       bottom: 35%
       width: 90px
       height: 90px
-      background: $yellow 
+      background: $yellow
       +m
         top: 413px
         left: -15px
@@ -1209,7 +1206,7 @@ body
       right: calc(50% - 476px)
       width: 48px
       height: 48px
-      background: $purple 
+      background: $purple
       +m
         top: 82px
         right: 49px
@@ -1234,7 +1231,7 @@ body
     font-weight: 500
     font-size: 24px
     line-height: 1.4
-    letter-spacing: -.045em 
+    letter-spacing: -.045em
     +m
       margin-bottom: 32px
       font-size: 20px
@@ -1248,18 +1245,18 @@ body
   &__input
     width: 100%
     height: 96px
-    padding: 0 210px 0 72px  
+    padding: 0 210px 0 72px
     background: $white
-    border-radius: 20px  
+    border-radius: 20px
     +f
     font-size: 16px
-    letter-spacing: -.025em 
+    letter-spacing: -.025em
     color: $dark
     +m
       height: 72px
-      padding: 0 30px 0 72px 
+      padding: 0 30px 0 72px
     +placeholder
-      color: $gray 
+      color: $gray
   &__btn
     position: absolute
     top: 50%
@@ -1268,7 +1265,7 @@ body
     height: 82px
     +m
       position: static
-      min-width: 100% 
+      min-width: 100%
       height: 72px
       margin-top: 16px
   &__icon
@@ -1277,28 +1274,28 @@ body
     left: 32px
     transform: translateY(-50%)
     width: 24px
-    font-size: 0 
+    font-size: 0
     +m
       left: 24px
-    
+
 .layouts
   position: relative
   padding: 231px 0 165px
-  background: $white 
+  background: $white
   +d
     padding: 216px 0 126px
   +t
-    padding: 150px 0 125px 
+    padding: 150px 0 125px
   +m
-    padding: 80px 0 25px 
+    padding: 80px 0 25px
   &__wrap
     max-width: 450px
     +m
-      max-width: 100% 
+      max-width: 100%
       margin-bottom: 90px
   &__stage
     margin-bottom: 24px
-    color: $purple  
+    color: $purple
     +m
       margin-bottom: 18px
   &__head
@@ -1318,14 +1315,14 @@ body
     +fd
     font-size: 18px
     font-weight: 500
-    line-height: 1.1 
+    line-height: 1.1
     +nl
-      margin-bottom: 31px  
+      margin-bottom: 31px
   &__icon
     flex-shrink: 0
     width: 56px
-    margin-right: 24px 
-    font-size: 0 
+    margin-right: 24px
+    font-size: 0
   &__pic
     width: 100%
   &__view
@@ -1347,7 +1344,7 @@ body
     &[data-aos]
       .layouts__preview
         opacity: 0
-        transition: all .5s 
+        transition: all .5s
         &:first-child
           transform: translateY(40px)
         &:nth-child(2)
@@ -1360,22 +1357,22 @@ body
           transform: translate(40px,40px)
         +nf
           z-index: 2
-      &.aos-animate 
+      &.aos-animate
         .layouts__preview
           opacity: 1
           &:first-child
             transform: translateY(0)
           &:nth-child(2)
-            transition-delay: .2s 
+            transition-delay: .2s
             transform: translate(0,0)
           &:nth-child(3)
-            transition-delay: .3s 
+            transition-delay: .3s
             transform: translateX(0)
           &:nth-child(4)
-            transition-delay: .4s 
+            transition-delay: .4s
             transform: translateX(0) skewX(0)
           &:nth-child(5)
-            transition-delay: .5s 
+            transition-delay: .5s
             transform: translate(0,0)
   &__preview
     &:first-child
@@ -1385,7 +1382,7 @@ body
       +m
         width: auto
         max-width: 600px
-        margin: 0 auto 
+        margin: 0 auto
     &:nth-child(2)
       top: -76px
       right: 133px
@@ -1417,7 +1414,7 @@ body
         width: 150px
       +m
         left: calc(50% - 180px)
-        bottom: 125px 
+        bottom: 125px
         width: 120px
     &:nth-child(5)
       top: -155px
@@ -1432,9 +1429,9 @@ body
       +m
         top: -66px
         left: calc(50% - 197px)
-        width: 234px 
+        width: 234px
     +nf
-      position: absolute  
+      position: absolute
 
 .like
   position: relative
@@ -1446,25 +1443,25 @@ body
   &__center
     max-width: 1384px
     +x
-      padding: 0 34px 
+      padding: 0 34px
     +m
       max-width: 400px
-      padding: 0 16px 
+      padding: 0 16px
   &__container
     position: relative
     max-width: 1240px
-    margin: 0 auto 
+    margin: 0 auto
     padding: 105px 100px
-    border-radius: 40px 
-    border: 1px solid #F1F5F8  
-    background: $white linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%) 
+    border-radius: 40px
+    border: 1px solid #F1F5F8
+    background: $white linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%)
     +x
-      padding: 80px 38px 
+      padding: 80px 38px
     +d
-      padding: 105px 38px 143px 
+      padding: 105px 38px 143px
     +m
       padding: 375px 16px 80px
-      text-align: center 
+      text-align: center
       overflow: hidden
     &:before,
     &:after
@@ -1472,8 +1469,8 @@ body
       position: absolute
       left: 16px
       right: 16px
-      border-radius: 40px 
-      background: rgba($gray-light, .5) 
+      border-radius: 40px
+      background: rgba($gray-light, .5)
       +m
         left: 8px
         right: 8px
@@ -1491,7 +1488,7 @@ body
     bottom: 35px
     z-index: 3
     width: 520px
-    font-size: 0 
+    font-size: 0
     +d
       right: -130px
     +t
@@ -1511,15 +1508,15 @@ body
         opacity: 1
   &__circle
     position: absolute
-    border-radius: 50% 
+    border-radius: 50%
   &__container > &__circle
     top: 50%
-    right: calc(50% - 430px) 
+    right: calc(50% - 430px)
     z-index: 2
     width: 410px
     height: 410px
     margin-top: -205px
-    background: $pink 
+    background: $pink
     +t
       top: 60%
       width: 360px
@@ -1531,13 +1528,13 @@ body
       right: 50%
       margin: 0 -126px 0 0
   &__pic
-    width: 100% 
+    width: 100%
   &__wrap
     position: relative
     z-index: 4
     max-width: 430px
     +m
-      max-width: 100% 
+      max-width: 100%
   &__title
     margin-bottom: 40px
     +d
@@ -1549,7 +1546,7 @@ body
       margin-bottom: 50px
       color: #6D7381
     +m
-      margin-bottom: 32px 
+      margin-bottom: 32px
     p
       +nl
         margin-bottom: 23px
@@ -1564,7 +1561,7 @@ body
       bottom: -73px
       width: 130px
       height: 130px
-      background: $yellow 
+      background: $yellow
       +m
         top: 62px
         right: 32px
@@ -1577,7 +1574,7 @@ body
       left: 44.5%
       width: 70px
       height: 70px
-      background: $pink 
+      background: $pink
       +d
         top: 54px
         width: 48px
@@ -1592,11 +1589,11 @@ body
       right: 150px
       width: 90px
       height: 90px
-      background: $purple 
+      background: $purple
       +d
         display: none
       +m
-        display: block 
+        display: block
         top: 101px
         left: 55px
         right: auto
@@ -1621,16 +1618,16 @@ body
 .switch
   display: inline-block
   position: relative
-  user-select: none 
+  user-select: none
   cursor: pointer
   -webkit-tap-highlight-color: rgba(0,0,0,0)
   font-size: 0
-  transition: opacity .25s 
+  transition: opacity .25s
   &__input
     position: absolute
     top: 0
     left: 0
-    opacity: 0 
+    opacity: 0
   &__flex
     display: inline-flex
     justify-content: center
@@ -1639,22 +1636,22 @@ body
     display: block
     width: 56px
     height: 24px
-    margin: 0 24px 
-    padding: 4px 5px 
+    margin: 0 24px
+    padding: 4px 5px
     background: $purple
-    border-radius: 12px 
+    border-radius: 12px
     transition: all .25s
     &:before
       content: ""
       position: absolute
       top: 50%
       left: 5px
-      transform: translateY(-50%)  
+      transform: translateY(-50%)
       width: 16px
       height: 16px
       border-radius: 50%
-      background: $white 
-      transition: all .25s 
+      background: $white
+      transition: all .25s
   &:hover
     opacity: .85
   &__yearly,
@@ -1663,17 +1660,17 @@ body
     line-height: 24px
     font-weight: 500
     letter-spacing: -.04em
-    color: #99A1AA 
-    transition: color .25s 
+    color: #99A1AA
+    transition: color .25s
   &__yearly
-    color: $purple 
+    color: $purple
   &__input:checked + &__flex &__box:before
     transform: translate(30px,-50%)
   &__input:checked + &__flex &__yearly
-    color: #99A1AA 
-  &__input:checked + &__flex &__monthly 
-    color: $purple 
-  
+    color: #99A1AA
+  &__input:checked + &__flex &__monthly
+    color: $purple
+
 .plan
   position: relative
   margin-bottom: 110px
@@ -1701,7 +1698,7 @@ body
     max-width: 380px
     margin: 0 auto 34px
     +m
-      margin-bottom: 30px 
+      margin-bottom: 30px
   .switch
     margin-left: -12px
     +m
@@ -1723,18 +1720,18 @@ body
     border-width: 0 0 2px
     border-style: solid
     border-color: #E3E6E9
-    border-radius: 0 
+    border-radius: 0
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='16' fill='none'%3E%3Cpath fill-rule='evenodd' d='M5.707.293a1 1 0 0 0-1.414 0l-4 4a1 1 0 1 0 1.414 1.414L5 2.414l3.293 3.293a1 1 0 1 0 1.414-1.414l-4-4zM.293 11.207l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L5 13.086 1.707 9.793a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414z' fill='%23292930'/%3E%3C/svg%3E") no-repeat 100% 50% / 10px auto
     +f
     font-size: 20px
-    font-weight: 500 
+    font-weight: 500
     color: $purple
-    transition: all .25s 
+    transition: all .25s
     +m
-      border-width: 0 0 1px 
+      border-width: 0 0 1px
     +a
       min-width: 100%
-      font-size: 16px 
+      font-size: 16px
     &::-ms-expand
       display: none
     &:-moz-focusring
@@ -1744,11 +1741,11 @@ body
     display: flex
     margin: 0 -20px
     +d
-      margin: 0 -12px 
+      margin: 0 -12px
     +t
       display: block
       max-width: 400px
-      margin: 0 auto 
+      margin: 0 auto
   &__item
     position: relative
     display: flex
@@ -1756,8 +1753,8 @@ body
     flex: 0 0 calc(33.333% - 40px)
     width: calc(33.333% - 40px)
     margin: 0 20px
-    padding: 40px 
-    border-radius: 32px 
+    padding: 40px
+    border-radius: 32px
     +d
       flex: 0 0 calc(33.333% - 24px)
       width: calc(33.333% - 24px)
@@ -1765,26 +1762,26 @@ body
       padding: 24px 24px 20px
     +t
       width: 100%
-      margin: 0 
-      padding: 40px 
+      margin: 0
+      padding: 40px
     +m
-      padding: 24px    
+      padding: 24px
     &:first-child
       background: $purple
-      color: $white 
+      color: $white
       .plan__price
         color: rgba($white, .5)
       .plan__money
-        color: $white 
+        color: $white
       .plan__list li
-        color: $white 
+        color: $white
         &:before
-          background-image: url('../img/list-icon-1.svg') 
+          background-image: url('../img/list-icon-1.svg')
     &:nth-child(2)
-      background: $white 
-      box-shadow: 0 20px 40px rgba($dark, .05) 
+      background: $white
+      box-shadow: 0 20px 40px rgba($dark, .05)
     &:nth-child(3)
-      border: 1px solid #E3E6E9 
+      border: 1px solid #E3E6E9
     +nf
       display: none
       +rmin(1024)
@@ -1799,7 +1796,7 @@ body
     width: 48px
     height: 48px
     border-radius: 50%
-    background: $yellow  
+    background: $yellow
     +d
       top: 12px
       right: 12px
@@ -1818,9 +1815,9 @@ body
     align-items: center
     margin-bottom: 6px
     font-size: 14px
-    letter-spacing: 0 
+    letter-spacing: 0
   &__icon
-    flex-shrink: 0 
+    flex-shrink: 0
     margin-right: 14px
     font-size: 0
   &__item &__title
@@ -1834,7 +1831,7 @@ body
   &__price
     margin-bottom: 45px
     font-size: 14px
-    color: $gray 
+    color: $gray
     +d
       margin-bottom: 32px
   &__money
@@ -1842,14 +1839,14 @@ body
     font-size: 20px
     font-weight: 600
     line-height: 1.1
-    color: $purple  
+    color: $purple
   &__list
     flex-grow: 1
     margin-bottom: 40px
     li
       position: relative
       padding-left: 36px
-      color: $gray 
+      color: $gray
       &:before
         content: ""
         position: absolute
@@ -1857,14 +1854,14 @@ body
         left: 0
         width: 24px
         height: 24px
-        background: url('../img/list-icon-2.svg') no-repeat 0 0 / 100% auto  
+        background: url('../img/list-icon-2.svg') no-repeat 0 0 / 100% auto
       +nl
         margin-bottom: 24px
   &__btn
     min-width: 100%
     margin-top: auto
-    &.btn_pink
-      color: $dark 
+    // &.btn_pink
+    //   color: $dark
   &__circle
     position: absolute
     top: 170px
@@ -1873,14 +1870,14 @@ body
     height: 49px
     z-index: -1
     border-radius: 50%
-    background: $pink   
-  
+    background: $pink
+
 .work
   position: relative
   height: 923px
   margin-bottom: 239px
-  padding: 148px 0 0 
-  background: $pink 
+  padding: 148px 0 0
+  background: $pink
   +d
     margin-bottom: 190px
   +t
@@ -1908,7 +1905,7 @@ body
       color: #3A38BF
   &__details
     position: absolute
-    right: calc(50% - 520px) 
+    right: calc(50% - 520px)
     bottom: -170px
     z-index: 4
     display: flex
@@ -1918,8 +1915,8 @@ body
     width: 505px
     height: 505px
     margin-left: auto
-    padding: 0 90px 35px 95px 
-    border-radius: 50% 
+    padding: 0 90px 35px 95px
+    border-radius: 50%
     background: $purple
     +t
       right: -50px
@@ -1931,8 +1928,8 @@ body
       bottom: -196px
       display: inline-block
       width: 505px
-      height: 505px 
-      margin-right: -252px 
+      height: 505px
+      margin-right: -252px
       padding: 48px 90px 0
       text-align: center
   &__icon
@@ -1942,29 +1939,29 @@ body
     width: 40px
     height: 40px
     margin-bottom: 24px
-    border-radius: 12px 
-    background: $white 
+    border-radius: 12px
+    background: $white
     font-size: 0
     +m
       width: 107px
       height: 107px
       margin-bottom: 40px
-      border-radius: 50% 
+      border-radius: 50%
   &__text
     margin-bottom: 24px
     font-size: 22px
-    line-height: (33/22) 
+    line-height: (33/22)
     font-weight: 500
-    letter-spacing: 0 
-    color: $white 
+    letter-spacing: 0
+    color: $white
     +m
       margin-bottom: 32px
       font-size: 18px
   &__link
     position: relative
     display: inline-block
-    font-weight: 500 
-    color: rgba($white, .5) 
+    font-weight: 500
+    color: rgba($white, .5)
     transition: all .25s
     +m
       display: inline-flex
@@ -1975,7 +1972,7 @@ body
       border-radius: 20px
       background: $pink
       font-size: 16px
-      color: $dark   
+      color: $dark
     &:before
       content: ""
       position: absolute
@@ -1986,17 +1983,17 @@ body
       background: $white
       transition: width .25s
       +m
-        display: none 
+        display: none
     &:hover
       padding-left: 50px
-      color: $white 
+      color: $white
       +m
         padding: 0
-        color: $dark 
+        color: $dark
       &:before
         width: 34px
   &__pic
-    width: 100% 
+    width: 100%
   &__icon &__pic
     width: 25px
   &__circle
@@ -2095,20 +2092,20 @@ body
       opacity: 0
       transform: translate(50px,-50px) rotate(0)
       transition-property: transform, opacity
-      &.aos-animate 
+      &.aos-animate
         transform: translate(0,0) rotate(0)
         opacity: 1
   &__hand
     z-index: 5
     &:first-child
       left: calc(50% - 827px)
-      bottom: -421px 
+      bottom: -421px
       width: 662px
       +rmin(1600)
         left: 0
       +d
         left: calc(50% - 600px)
-        bottom: -161px 
+        bottom: -161px
         width: 500px
       +t
         left: calc(50% - 500px)
@@ -2117,20 +2114,20 @@ body
       +m
         left: 0
         bottom: 60px
-        width: 330px 
+        width: 330px
       +a
         left: calc(50% - 260px)
       &[data-aos]
         transform: translate(-100px,100px) rotate(-30deg)
     &:nth-child(2)
       right: calc(50% - 813px)
-      bottom: -600px 
+      bottom: -600px
       width: 524px
       +rmin(1600)
         right: 0
       +d
         right: calc(50% - 600px)
-        bottom: -340px 
+        bottom: -340px
         width: 370px
       +t
         right: calc(50% - 500px)
@@ -2143,7 +2140,7 @@ body
     &[data-aos]
       opacity: 0
       transition-property: transform, opacity
-      &.aos-animate 
+      &.aos-animate
         transform: translate(0,0) rotate(0)
         opacity: 1
   &__cursor
@@ -2163,7 +2160,7 @@ body
       opacity: 0
       transform: translate(50px,50px) rotate(0)
       transition-property: transform, opacity
-      &.aos-animate 
+      &.aos-animate
         transform: translate(0,0) rotate(0)
         opacity: 1
 
@@ -2182,7 +2179,7 @@ body
       margin-bottom: 112px
   &__stage
     margin-bottom: 24px
-    color: $red 
+    color: $red
   &__body
     display: flex
     +m
@@ -2203,7 +2200,7 @@ body
         flex: 0 0 calc(100% - 300px)
         width: calc(100% - 300px)
       +m
-        width: 100% 
+        width: 100%
   &__body &__title
     max-width: 230px
     +d
@@ -2212,7 +2209,7 @@ body
   &__container
     margin: 0 -20px
     +m
-      margin: 0 -8px 
+      margin: 0 -8px
   &__slider
     visibility: hidden
     &.slick-initialized
@@ -2220,11 +2217,11 @@ body
   &__slide
     padding: 0 20px
     +m
-      padding: 0 8px 
+      padding: 0 8px
       opacity: .3
-      transition: opacity .25s 
+      transition: opacity .25s
       &.slick-active
-        opacity: 1 
+        opacity: 1
   &__line
     height: 2px
     margin-bottom: 60px
@@ -2247,11 +2244,11 @@ body
     margin-bottom: 40px
     +fd
     font-size: 24px
-    letter-spacing: -.025em 
+    letter-spacing: -.025em
     line-height: 1.25
     color: $dark
     +d
-      max-width: 100% 
+      max-width: 100%
       margin-bottom: 32px
     +m
       font-size: 18px
@@ -2267,13 +2264,13 @@ body
   &__ava &__pic
     max-height: 51px
   &__details
-    font-weight: 500 
+    font-weight: 500
   &__man
     font-weight: 500
     letter-spacing: -.04em
   &__login
     font-size: 14px
-    color: $gray 
+    color: $gray
   &__circle
     position: absolute
     top: 0
@@ -2281,7 +2278,7 @@ body
     width: 88px
     height: 88px
     border-radius: 50%
-    background: $pink 
+    background: $pink
     +m
       top: -90px
       left: 27px
@@ -2290,16 +2287,16 @@ body
       height: 40px
   .slick-list
     +m
-      padding-right: 100px  
+      padding-right: 100px
   .slick-arrow
     position: absolute
     top: 118px
     width: 40px
     height: 40px
     border-radius: 50%
-    background: $pink 
+    background: $pink
     font-size: 0
-    transition: all .25s 
+    transition: all .25s
     +m
       top: -80px
     .icon
@@ -2314,12 +2311,12 @@ body
     +m
       left: 8px
   .slick-next
-    left: -283px 
+    left: -283px
     +t
       left: -223px
     +m
       left: 65px
-    
+
 .speed
   position: relative
   margin-bottom: 302px
@@ -2380,7 +2377,7 @@ body
     font-size: 0
     pointer-events: none
   &__pic
-    width: 100%   
+    width: 100%
   &__line
     top: 182px
     left: 0
@@ -2388,11 +2385,11 @@ body
     +m
       top: auto
       left: -300px
-      right: -300px        
+      right: -300px
       bottom: 300px
   &__preview
     top: -25px
-    right: calc(50% - 429px) 
+    right: calc(50% - 429px)
     width: 408px
     +d
       top: -90px
@@ -2405,18 +2402,18 @@ body
       top: auto
       right: auto
       width: 310px
-      margin: 0 auto 
+      margin: 0 auto
     &:before
       content: ""
-      position: absolute 
+      position: absolute
       top: 112px
       left: 50%
       z-index: -1
       width: 592px
       height: 592px
       margin-left: -294px
-      border-radius: 50% 
-      background: $purple 
+      border-radius: 50%
+      background: $purple
       +d
         top: 110px
       +t
@@ -2465,7 +2462,7 @@ body
       display: none
   &__circle
     z-index: -1
-    border-radius: 50% 
+    border-radius: 50%
     &:first-child
       top: 240px
       left: calc(50% - 627px)
@@ -2475,13 +2472,13 @@ body
       +m
         top: 172px
         right: -16px
-        left: auto 
+        left: auto
     &:nth-child(2)
       top: 112px
       left: calc(50% - 436px)
       width: 120px
       height: 120px
-      background: $yellow 
+      background: $yellow
       +d
         left: calc(50% - 360px)
       +m
@@ -2493,8 +2490,8 @@ body
         left: -32px
         width: 64px
         height: 64px
-        background: $pink 
-      
+        background: $pink
+
 .package
   position: relative
   margin-bottom: 178px
@@ -2508,20 +2505,20 @@ body
   &__center
     max-width: 1384px
     +x
-      padding: 0 36px 
+      padding: 0 36px
     +m
       padding: 0
   &__container
     position: relative
     max-width: 1240px
-    margin: 0 auto 
+    margin: 0 auto
     &:before,
     &:after
       content: ""
       position: absolute
       left: 16px
       right: 16px
-      border-radius: 40px  
+      border-radius: 40px
       +m
         display: none
     &:before
@@ -2539,15 +2536,15 @@ body
     padding: 100px 45px 32px 100px
     overflow: hidden
     background: #FFD3DB
-    border-radius: 40px 
+    border-radius: 40px
     +x
       padding: 60px 45px 32px 38px
     +d
       padding: 36px 0 36px 38px
     +t
-      padding: 40px 
+      padding: 40px
     +m
-      padding: 16px 
+      padding: 16px
       border-radius: 0
   &__circle
     position: absolute
@@ -2557,13 +2554,13 @@ body
     left: -98px
     width: 506px
     height: 506px
-    background: $purple 
+    background: $purple
     +m
       display: none
     &[data-aos]
       transform: translate(-100%,-100%)
       transition-property: transform
-      &.aos-animate 
+      &.aos-animate
         transform: translate(0,0)
   &__slider
     position: relative
@@ -2584,45 +2581,45 @@ body
     +m
       padding-bottom: 50px
       background: $white
-      border-radius: 24px  
+      border-radius: 24px
   &__details
     flex-shrink: 0
     width: 410px
     margin-right: 74px
     padding: 50px 48px 31px
-    border-radius: 16px  
-    background: $white 
+    border-radius: 16px
+    background: $white
     +d
       margin-right: 58px
     +t
-      width: 500px 
+      width: 500px
       margin: 0 auto 20px
     +m
       width: 100%
       margin: 0 0 20px
-      padding: 50px 32px 0 
-      background: none 
+      padding: 50px 32px 0
+      background: none
     &[data-aos]
       transform: translateX(-100%)
       opacity: 0
       transition-property: transform, opacity
-      &.aos-animate 
+      &.aos-animate
         transform: translateX(0)
-        opacity: 1   
+        opacity: 1
   &__category
     display: flex
     align-items: center
     margin-bottom: 6px
     +fd
     font-size: 14px
-    font-weight: 500 
+    font-weight: 500
   &__category &__icon
     flex-shrink: 0
     width: 24px
     margin-right: 14px
-    font-size: 0 
+    font-size: 0
   &__pic
-    width: 100% 
+    width: 100%
   &__title
     margin-bottom: 36px
     +m
@@ -2655,9 +2652,9 @@ body
       transform: translateY(-50%)
       width: 10px
       height: 18px
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='18' fill='none'%3E%3Cpath fill-rule='evenodd' d='M.293.293a1 1 0 0 1 1.414 0l8 8a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0 1 1 0 0 1 0-1.414L7.586 9 .293 1.707a1 1 0 0 1 0-1.414z' fill='%23000'/%3E%3C/svg%3E") no-repeat 50% 50% / cover 
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='18' fill='none'%3E%3Cpath fill-rule='evenodd' d='M.293.293a1 1 0 0 1 1.414 0l8 8a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0 1 1 0 0 1 0-1.414L7.586 9 .293 1.707a1 1 0 0 1 0-1.414z' fill='%23000'/%3E%3C/svg%3E") no-repeat 50% 50% / cover
     &:hover
-      opacity: .85 
+      opacity: .85
     +nl
       margin-bottom: 32px
   &__link &__icon
@@ -2679,9 +2676,9 @@ body
     width: 40px
     height: 40px
     border-radius: 50%
-    background: $pink 
+    background: $pink
     font-size: 0
-    transition: all .25s 
+    transition: all .25s
     .icon
       font-size: 12px
       fill: $white
@@ -2701,13 +2698,13 @@ body
   &__preview
     padding-top: 75px
     text-align: center
-    font-size: 0 
+    font-size: 0
     +d
       padding-top: 0
   &__preview &__pic
     width: auto
-    max-width: 100% 
-    max-height: 400px  
+    max-width: 100%
+    max-height: 400px
   &__circles &__circle
     &:first-child
       bottom: -70px
@@ -2738,13 +2735,13 @@ body
           top: 24px
           right: 24px
           left: 24px
-          bottom: 24px    
+          bottom: 24px
     &:nth-child(2)
       top: 90px
       right: calc(50% - 247px)
       width: 48px
       height: 48px
-      background: $white 
+      background: $white
       +d
         right: calc(50% - 400px)
   .slick-dots
@@ -2781,13 +2778,13 @@ body
           border-radius: 50%
           background: $white
           font-size: 0
-          transition: all .25s  
+          transition: all .25s
       &.slick-active
         button:before
           width: 12px
           height: 12px
           border: 3px solid $white
-          background: $purple  
+          background: $purple
 
 .demo
   position: relative
@@ -2809,7 +2806,7 @@ body
     margin-bottom: 22px
     +fd
     font-size: 48px
-    font-weight: 500 
+    font-weight: 500
     line-height: (62/48)
   &__info
     max-width: 450px
@@ -2817,7 +2814,7 @@ body
     +fd
     font-size: 24px
     line-height: 1.4
-    letter-spacing: -.045em 
+    letter-spacing: -.045em
     +m
       max-width: 260px
       font-size: 20px
@@ -2825,7 +2822,7 @@ body
     display: flex
     margin: 0 -20px
     +t
-      margin: 0 -12px 
+      margin: 0 -12px
     +m
       display: block
       margin: 0
@@ -2834,28 +2831,28 @@ body
     flex-direction: column
     flex: 0 0 calc(50% - 40px)
     width: calc(50% - 40px)
-    margin: 0 20px 
-    padding: 80px 80px 70px 
-    border-radius: 40px 
+    margin: 0 20px
+    padding: 80px 80px 70px
+    border-radius: 40px
     +d
-      padding: 80px 50px 
+      padding: 80px 50px
     +t
       flex: 0 0 calc(50% - 24px)
       width: calc(50% - 24px)
-      margin: 0 12px 
+      margin: 0 12px
       padding: 50px 30px
     +m
       width: 100%
       margin: 0
-      padding: 32px 
+      padding: 32px
     &:first-child
-      border: 1px solid #E3E6E9 
-      background: $white 
+      border: 1px solid #E3E6E9
+      background: $white
     &:nth-child(2)
       background: $purple
       color: $white
       .demo__text
-        color: $white 
+        color: $white
       .demo__btn
         box-shadow: 0px 48px 48px rgba(0, 0, 0, 0.12), 0px 14px 20px rgba(35, 34, 87, 0.4)
         +m
@@ -2866,7 +2863,7 @@ body
   &__title
     margin-bottom: 45px
     font-size: 64px
-    letter-spacing: -.025em 
+    letter-spacing: -.025em
     +d
       font-size: 64px
     +t
@@ -2883,10 +2880,10 @@ body
     margin-bottom: 112px
     +fd
     font-size: 24px
-    font-weight: 500 
+    font-weight: 500
     line-height: 1.4
     letter-spacing: -.045em
-    color: $gray  
+    color: $gray
     +t
       margin-bottom: 60px
     +m
@@ -2896,12 +2893,8 @@ body
       line-height: 1.5
   &__btn
     min-width: 100%
-    height: 82px 
+    height: 82px
     margin-top: auto
-    +d
-      height: 72px
-    +m
-      height: 64px
   &__circle
     position: absolute
     top: -206px
@@ -2912,8 +2905,8 @@ body
     border-radius: 50%
     background: $pink
     +m
-      display: none   
-    
+      display: none
+
 .design
   position: relative
   margin-bottom: 110px
@@ -2970,13 +2963,13 @@ body
       transform: translateX(100px) rotate(30deg)
       opacity: 0
       transition-property: transform, opacity
-      &.aos-animate 
+      &.aos-animate
         transform: translateX(0) rotate(0)
         opacity: 1
   &__bg
     top: -33px
     right: calc(50% - 314px)
-    width: 290px 
+    width: 290px
     +d
       right: calc(50% - 260px)
     +t
@@ -2989,7 +2982,7 @@ body
       transform: scale(.7)
       opacity: 0
       transition-property: transform, opacity
-      &.aos-animate 
+      &.aos-animate
         transform: scale(1)
         opacity: 1
   &__circle
@@ -3017,7 +3010,7 @@ body
         right: -172px
         width: 270px
         height: 270px
-        background: $pink 
+        background: $pink
     &:nth-child(3)
       top: -250px
       right: calc(50% - 443px)
@@ -3025,20 +3018,20 @@ body
       height: 64px
       background: $purple
       +t
-        right: -32px 
+        right: -32px
       +m
         top: -72px
         right: 130px
         width: 24px
         height: 24px
   &__pic
-    width: 100% 
+    width: 100%
   &__scroll
     display: inline-flex
     margin-bottom: 80px
     font-weight: 500
-    letter-spacing: -.04em 
-    color: $gray  
+    letter-spacing: -.04em
+    color: $gray
     +m
       margin-bottom: 44px
   &__icon
@@ -3049,22 +3042,22 @@ body
   &__container
     margin: 0 -20px
     +d
-      margin: 0 -12px 
+      margin: 0 -12px
   &__slider
     visibility: hidden
     &.slick-initialized
       visibility: visible
   &__slide
     margin: 0 20px
-    padding: 40px 10px 10px 
-    border-radius: 24px 
+    padding: 40px 10px 10px
+    border-radius: 24px
     +d
-      margin: 0 12px 
+      margin: 0 12px
     &:first-child,
     &:nth-child(4)
       background: #FFEDDC
       .design__view
-        background: $pink 
+        background: $pink
       .design__preview
         top: 10px
         left: 15px
@@ -3073,7 +3066,7 @@ body
     &:nth-child(5)
       background: #DBDEFF
       .design__view
-        background: $purple 
+        background: $purple
       .design__preview
         top: 52px
         left: 50%
@@ -3086,7 +3079,7 @@ body
     &:nth-child(3)
       background: #DBF8FF
       .design__view
-        background: #90C8FC 
+        background: #90C8FC
       .design__preview
         top: 45px
         left: 50%
@@ -3096,8 +3089,8 @@ body
     position: relative
     width: 220px
     height: 220px
-    margin: 0 auto 40px 
-    border-radius: 50% 
+    margin: 0 auto 40px
+    border-radius: 50%
     font-size: 0
     +m
       margin-bottom: 34px
@@ -3106,13 +3099,13 @@ body
     background: $white
     border-radius: 24px
     +d
-      padding: 40px 24px 
+      padding: 40px 24px
   &__category
     margin-bottom: 23px
     +fd
     font-size: 14px
     line-height: 1
-    font-weight: 500 
+    font-weight: 500
     +d
       margin-bottom: 16px
   &__slide &__info
@@ -3121,11 +3114,11 @@ body
     font-size: 32px
     font-weight: 500
     line-height: 1.1
-    letter-spacing: -.045em 
+    letter-spacing: -.045em
     +d
       margin-bottom: 16px
       font-size: 24px
-      line-height: 1.4 
+      line-height: 1.4
     +t
       font-size: 30px
     +m
@@ -3135,7 +3128,7 @@ body
     +d
       max-width: 180px
     +m
-      max-width: 100% 
+      max-width: 100%
       font-size: 16px
     +a
       max-width: 180px
@@ -3147,7 +3140,7 @@ body
     font-size: 18px
     font-weight: 500
     line-height: 1.1
-    letter-spacing: -.045em 
+    letter-spacing: -.045em
     color: $bg-dark
     +d
       margin-top: 20px
@@ -3156,7 +3149,7 @@ body
       margin-left: 16px
       font-size: 14px
       fill: $bg-dark
-      transition: transform .25s 
+      transition: transform .25s
     &:hover .icon
       transform: translateX(3px)
   .slick-arrow
@@ -3165,9 +3158,9 @@ body
     width: 40px
     height: 40px
     border-radius: 50%
-    background: $bg-dark 
+    background: $bg-dark
     font-size: 0
-    transition: all .25s 
+    transition: all .25s
     +m
       top: -77px
     .icon
@@ -3180,7 +3173,7 @@ body
     +d
       right: 69px
   .slick-next
-    right: 20px 
+    right: 20px
     +d
       right: 12px
 
@@ -3208,8 +3201,8 @@ body
       +d
         display: none
   &__info
-    letter-spacing: 0 
-    color: $dark 
+    letter-spacing: 0
+    color: $dark
     +a
       max-width: 230px
   &__row
@@ -3219,18 +3212,18 @@ body
       display: block
   &__container
     flex: 0 0 calc(100% - 360px)
-    width: calc(100% - 360px) 
+    width: calc(100% - 360px)
     +t
       flex: 0 0 calc(100% - 300px)
       width: calc(100% - 300px)
     +m
-      width: 100% 
+      width: 100%
   &__pic
-    width: 100% 
+    width: 100%
   &__graphic
     position: relative
     flex-shrink: 0
-    width: 360px 
+    width: 360px
     font-size: 0
     +t
       width: 300px
@@ -3258,7 +3251,7 @@ body
     &[data-aos]
       transform: translateY(100%)
       transition-property: transform
-      &.aos-animate 
+      &.aos-animate
         transform: translateY(0)
   &__line
     left: 0
@@ -3287,20 +3280,20 @@ body
       z-index: -1
       width: 106px
       height: 106px
-      border-radius: 50% 
+      border-radius: 50%
       background: $yellow
   &__slider
     visibility: hidden
     &.slick-initialized
       visibility: visible
   &__slide
-    padding: 0 190px 0 180px 
+    padding: 0 190px 0 180px
     +d
-      padding: 0 120px 0 80px 
+      padding: 0 120px 0 80px
     +t
       padding: 0 40px
     +m
-      padding: 0 0 0 70px  
+      padding: 0 0 0 70px
   &__counter
     margin-bottom: 40px
     +fd
@@ -3314,7 +3307,7 @@ body
     pointer-events: none
     +f
     font-size: 288px
-    font-weight: 300 
+    font-weight: 300
     letter-spacing: -.09em
     +t
       font-size: 250px
@@ -3324,7 +3317,7 @@ body
     max-width: 230px
     margin-bottom: 65px
     +m
-      max-width: 100% 
+      max-width: 100%
       margin-bottom: 32px
     +a
       max-width: 230px
@@ -3334,22 +3327,22 @@ body
     height: 96px
     margin-right: 47px
     border-radius: 50%
-    background: $purple   
+    background: $purple
     +f
     font-size: 16px
     font-weight: 500
-    letter-spacing: -.04em  
-    color: $white 
+    letter-spacing: -.04em
+    color: $white
     transition: opacity .25s
     +m
       margin-right: 20px
     &:hover
-      opacity: .9 
+      opacity: .9
   &__link
     position: relative
     display: inline-block
     padding-left: 50px
-    font-weight: 500 
+    font-weight: 500
     color: $bg-dark
     transition: opacity .25s
     +m
@@ -3365,7 +3358,7 @@ body
       +m
         display: none
     &:hover
-      opacity: .8 
+      opacity: .8
   &__circle
     z-index: -1
     border-radius: 50%
@@ -3374,7 +3367,7 @@ body
       bottom: -4px
       width: 46px
       height: 46px
-      background: $pink 
+      background: $pink
       +m
         top: 51%
         left: -23px
@@ -3384,7 +3377,7 @@ body
       right: calc(50% - 623px)
       width: 226px
       height: 226px
-      background: $pink 
+      background: $pink
       +d
         right: calc(50% - 533px)
       +m
@@ -3413,7 +3406,7 @@ body
         height: 12px
         font-size: 0
         &:before
-          content: "" 
+          content: ""
           position: absolute
           top: 50%
           left: 50%
@@ -3428,7 +3421,7 @@ body
           width: 12px
           height: 12px
           border: 3px solid $bg-dark
-          background: $white 
+          background: $white
 
 .tool
   margin-bottom: 110px
@@ -3437,25 +3430,25 @@ body
   &__center
     max-width: 1384px
     +d
-      padding: 0 
+      padding: 0
     +t
       padding: 0
     +m
       padding: 0
   &__container
     position: relative
-    padding: 120px 100px 137px 
+    padding: 120px 100px 137px
     border-radius: 40px
     background: $purple
     color: $white
     +d
-      padding: 120px 72px 137px 
-      border-radius: 0 
+      padding: 120px 72px 137px
+      border-radius: 0
     +t
       padding: 80px 40px
     +m
       padding: 172px 32px
-      text-align: center  
+      text-align: center
   &__wrap
     max-width: 810px
   &__title
@@ -3467,16 +3460,16 @@ body
       margin-bottom: 24px
   &__info
     margin-bottom: 40px
-    letter-spacing: 0 
-    color: $white 
+    letter-spacing: 0
+    color: $white
     +m
       max-width: 220px
-      margin: 0 auto 60px 
+      margin: 0 auto 60px
   &__btn .btn
     min-width: 230px
     box-shadow: 0px 48px 48px rgba(0, 0, 0, 0.12), 0px 14px 20px rgba(35, 34, 87, 0.4)
     +m
-      min-width: 100% 
+      min-width: 100%
   &__cloud
     position: absolute
     left: 28%
@@ -3488,7 +3481,7 @@ body
     +m
       left: 28%
   &__pic
-    width: 100% 
+    width: 100%
 
 .roadmap
   position: relative
@@ -3527,7 +3520,7 @@ body
     -webkit-appearance: none
     -moz-appearance: none
     appearance: none
-    border: none 
+    border: none
     border-radius: 8px
     background: #E3E6E9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='9' fill='none'%3E%3Cpath fill-rule='evenodd' d='M.293.293a1 1 0 0 1 1.414 0L7.5 6.086 13.293.293a1 1 0 0 1 1.414 0 1 1 0 0 1 0 1.414l-6.5 6.5a1 1 0 0 1-1.414 0l-6.5-6.5a1 1 0 0 1 0-1.414z' fill='%23292930'/%3E%3C/svg%3E") no-repeat calc(100% - 15px) 50% / 15px auto
     +f
@@ -3562,7 +3555,7 @@ body
         transform: translateX(70px)
         opacity: 0
         transition: all .6s
-      &.aos-animate 
+      &.aos-animate
         .roadmap__calendar
           transform: translateX(0)
           opacity: 1
@@ -3576,7 +3569,7 @@ body
     +t
       width: 360px
   &__pic
-    width: 100% 
+    width: 100%
   &__body
     display: flex
     max-width: 930px
@@ -3596,19 +3589,19 @@ body
   &__box
     position: relative
     flex-shrink: 0
-    width: 540px 
+    width: 540px
     margin: 0 auto
-    padding-top: 42px 
+    padding-top: 42px
     +m
       width: calc(100% + 20px)
-      margin-right: -20px 
+      margin-right: -20px
   &__top
     display: flex
   &__col
     position: relative
     width: 1px
     height: 353px
-    background: #E3E6E9 
+    background: #E3E6E9
     +m
       height: 248px
     +nl
@@ -3636,13 +3629,13 @@ body
     background: rgba(#896BA7, .1)
     overflow: hidden
     &:nth-child(2)
-      margin-left: 33.33% 
+      margin-left: 33.33%
       +m
         margin-left: 23%
       .roadmap__progress
-        padding: 0 16px 
+        padding: 0 16px
         +m
-          padding: 0 12px 
+          padding: 0 12px
     +nl
       margin-bottom: 32px
   &__progress
@@ -3652,16 +3645,16 @@ body
     bottom: 0
     display: flex
     align-items: center
-    padding: 0 24px 
-    background: #896BA7 
-    color: $white 
+    padding: 0 24px
+    background: #896BA7
+    color: $white
     +m
-      padding: 0 16px 
+      padding: 0 16px
       font-size: 14px
     &[data-aos]
       transform: translateX(-100%)
       transition-property: transform
-      &.aos-animate 
+      &.aos-animate
         transform: translateX(0)
   &__circle
     z-index: -1
@@ -3681,7 +3674,7 @@ body
         bottom: auto
         width: 55px
         height: 55px
-        background: $pink 
+        background: $pink
     &:nth-child(2)
       top: 27px
       left: calc(50% - 168px)
@@ -3697,16 +3690,16 @@ body
   &__preview
     position: absolute
     bottom: -134px
-    right: calc(50% - 718px) 
+    right: calc(50% - 718px)
     z-index: -1
     +d
-      right: calc(50% - 774px) 
+      right: calc(50% - 774px)
     +m
       display: none
     &[data-aos]
       transform: rotate(-30deg)
       transition-property: transform
-      &.aos-animate 
+      &.aos-animate
         transform: rotate(0)
 
 .accord
@@ -3719,7 +3712,7 @@ body
       display: block
   &__details
     flex-grow: 1
-    padding: 33px 50px 0 0 
+    padding: 33px 50px 0 0
     +t
       margin-bottom: 40px
       padding: 0
@@ -3733,7 +3726,7 @@ body
     +t
       width: auto
     +m
-      margin: 0 -8px 
+      margin: 0 -8px
   &__title
     margin-bottom: 40px
     font-size: 48px
@@ -3757,28 +3750,28 @@ body
       position: relative
       padding-left: 44px
       &:before
-        content: "" 
+        content: ""
         position: absolute
         top: 1px
         left: 0
         width: 20px
         height: 20px
-        border-radius: 50% 
-        background-color: $purple 
+        border-radius: 50%
+        background-color: $purple
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='7' fill='none'%3E%3Cpath fill-rule='evenodd' d='M8.7.286A1 1 0 0 1 8.714 1.7l-4.9 5a1 1 0 0 1-1.475-.051L.24 4.187a1 1 0 0 1 .112-1.41 1 1 0 0 1 1.41.112l1.4 1.63L7.286.3A1 1 0 0 1 8.7.286z' fill='%23fff'/%3E%3C/svg%3E")
-        background-repeat: no-repeat 
+        background-repeat: no-repeat
         background-position: 50% 50%
         background-size: 9px 7px
       &:nth-child(2n+1):before
-        background-color: $pink 
+        background-color: $pink
       +nl
         margin-bottom: 16px
   &__item
     padding: 8px 7px 0
-    border-radius: 24px  
+    border-radius: 24px
     transition: all .25s
     &.active
-      box-shadow: 0 5px 40px rgba($bg-dark, .1) 
+      box-shadow: 0 5px 40px rgba($bg-dark, .1)
     +nl
       margin-bottom: 8px
   &__head
@@ -3786,18 +3779,18 @@ body
     display: flex
     align-items: center
     padding: 16px 80px 16px 24px
-    border-radius: 16px 
+    border-radius: 16px
     +fd
     font-size: 18px
     font-weight: 500
     line-height: 1.1
-    color: $bg-dark  
+    color: $bg-dark
     cursor: pointer
     -webkit-tap-highlight-color: rgba(0,0,0,0)
-    transition: all .25s 
+    transition: all .25s
     +m
       padding: 16px 60px 16px 24px
-      transition: background .25s, color .25s 
+      transition: background .25s, color .25s
     &:before,
     &:after
       content: ""
@@ -3810,7 +3803,7 @@ body
     &:before
       right: 44px
       width: 16px
-      height: 2px 
+      height: 2px
       +m
         right: 24px
     &:after
@@ -3820,16 +3813,16 @@ body
       +m
         right: 31px
     &:hover
-      color: $purple 
+      color: $purple
   &__item.active &__head
-    padding: 24px 80px 24px 24px 
+    padding: 24px 80px 24px 24px
     background: $purple
     color: $white
     +m
       padding: 16px 60px 16px 24px
     &:before,
     &:after
-      background: $white 
+      background: $white
     &:after
       transform: translateY(-50%) rotate(90deg)
   &__icon
@@ -3838,23 +3831,23 @@ body
     margin-right: 24px
     font-size: 0
   &__pic
-    width: 100% 
+    width: 100%
   &__body
     display: none
     padding: 60px 55px 92px 302px
-    background-repeat: no-repeat  
+    background-repeat: no-repeat
     background-position: 45px 60%
-    background-size: auto 260px 
+    background-size: auto 260px
     +d
-      padding: 32px 24px 40px 
+      padding: 32px 24px 40px
       background: $white !important
     +m
-      padding: 32px 20px 
+      padding: 32px 20px
   &__desc
     li
       position: relative
       padding-left: 36px
-      color: $gray 
+      color: $gray
       &:before
         content: ""
         position: absolute
@@ -3869,15 +3862,15 @@ body
 .partners
   position: relative
   z-index: 2
-  padding: 111px 0 62px 
+  padding: 111px 0 62px
   overflow: hidden
   background: $bg-dark
-  color: $white 
+  color: $white
   +m
-    padding: 80px 0 52px 
+    padding: 80px 0 52px
   &__center
     position: relative
-    z-index: 2 
+    z-index: 2
   &__head
     display: flex
     margin-bottom: 78px
@@ -3896,24 +3889,24 @@ body
       width: 225px
     +t
       width: 100%
-      margin-bottom: 24px 
+      margin-bottom: 24px
     +m
       margin-bottom: 16px
   &__details
     flex-grow: 1
   &__title
-    margin-bottom: 50px 
+    margin-bottom: 50px
     +m
       margin-bottom: 32px
   &__info
     max-width: 500px
-    color: rgba($white, .7) 
+    color: rgba($white, .7)
   &__list
     display: flex
     flex-wrap: wrap
     margin: 0 -20px
     +d
-      margin: 0 -16px 
+      margin: 0 -16px
   &__item
     display: flex
     justify-content: center
@@ -3921,19 +3914,19 @@ body
     flex: 0 0 calc(25% - 40px)
     width: calc(25% - 40px)
     height: 133px
-    margin: 0 20px  
+    margin: 0 20px
     font-size: 0
     filter: grayscale(100%)
     +d
       flex: 0 0 calc(25% - 32px)
       width: calc(25% - 32px)
-      margin: 0 16px 
+      margin: 0 16px
     +m
       flex: 0 0 50%
       width: 50%
       height: 110px
       margin: 0
-      padding: 0 15px 
+      padding: 0 15px
       filter: grayscale(0)
     &:hover
       filter: grayscale(0)
@@ -3942,12 +3935,12 @@ body
       transform: scaleY(2)
       opacity: 0
       transition-property: transform, opacity
-      &.aos-animate 
+      &.aos-animate
         transform: scaleY(1)
         opacity: 1
   &__item &__pic
-    max-width: 100% 
-    max-height: 100% 
+    max-width: 100%
+    max-height: 100%
   &__preview,
   &__circle
     position: absolute
@@ -3963,15 +3956,15 @@ body
     &[data-aos]
       transform: rotate(30deg)
       transition-property: transform
-      &.aos-animate 
+      &.aos-animate
         transform: scaleY(1)
   &__circle
     top: -258px
-    right: calc(50% - 522px) 
+    right: calc(50% - 522px)
     width: 268px
     height: 268px
     border-radius: 50%
-    background: #525260  
+    background: #525260
     +d
       top: 113px
       right: -88px
@@ -3992,7 +3985,7 @@ body
     +d
       padding-bottom: 130px
     +t
-      padding: 240px 0 90px 
+      padding: 240px 0 90px
     +m
       margin-bottom: 64px
       padding: 0
@@ -4008,7 +4001,7 @@ body
   &__info
     max-width: 410px
     +m
-      max-width: 100% 
+      max-width: 100%
   &__line,
   &__preview,
   &__circle,
@@ -4021,7 +4014,7 @@ body
     top: 0
     left: calc(50% - 517px)
     bottom: -1px
-    font-size: 0 
+    font-size: 0
     +d
       left: calc(50% - 438px)
     +m
@@ -4031,14 +4024,14 @@ body
       bottom: auto
   &__line &__pic
     width: auto
-    height: 100% 
+    height: 100%
     +m
       width: 600px
   &__preview
     top: 126px
     right: calc(50% - 724px)
     width: 480px
-    font-size: 0 
+    font-size: 0
     +d
       top: 156px
       right: calc(50% - 654px)
@@ -4049,14 +4042,14 @@ body
     +m
       display: none
   &__pic
-    width: 100% 
+    width: 100%
   &__body
     display: flex
     flex-wrap: wrap
-    border-top: 1px solid #E3E6E9 
+    border-top: 1px solid #E3E6E9
     +m
       display: block
-      border: none 
+      border: none
   &__col
     display: flex
     align-items: center
@@ -4064,17 +4057,17 @@ body
     width: 50%
     height: 444px
     padding-top: 5px
-    border-bottom: 1px solid #E3E6E9 
+    border-bottom: 1px solid #E3E6E9
     +t
       height: 380px
     +m
-      width: 100% 
+      width: 100%
       height: auto
-      border: none 
+      border: none
     &:nth-child(2n+1)
-      border-right: 1px solid #E3E6E9 
+      border-right: 1px solid #E3E6E9
       +m
-        border: none 
+        border: none
       .quality__item
         margin-left: auto
         margin-right: 100px
@@ -4083,7 +4076,7 @@ body
         +t
           margin: 0 20px 0 30px
         +m
-          margin: 0 32px 
+          margin: 0 32px
     &:nth-child(2n)
       .quality__item
         margin-left: 100px
@@ -4092,7 +4085,7 @@ body
         +t
           margin: 0 30px 0 20px
         +m
-          margin: 0 32px 
+          margin: 0 32px
     &:nth-child(1)
       .quality__icon
         top: 3px
@@ -4142,9 +4135,9 @@ body
     +t
       padding-left: 150px
     +m
-      width: 100% 
-      max-width: 100% 
-      padding: 140px 0 0 
+      width: 100%
+      max-width: 100%
+      padding: 140px 0 0
   &__category
     margin-bottom: 24px
     +fd
@@ -4161,7 +4154,7 @@ body
     display: inline-flex
     align-items: center
     font-weight: 500
-    color: $dark  
+    color: $dark
     .icon
       margin-left: 20q
       font-size: 14px
@@ -4173,10 +4166,10 @@ body
     border-radius: 50%
     &:first-child
       top: -74px
-      right: calc(50% - 577px) 
+      right: calc(50% - 577px)
       width: 148px
       height: 148px
-      background: $purple 
+      background: $purple
       +d
         right: 204px
       +m
@@ -4186,24 +4179,24 @@ body
         height: 38px
     &:nth-child(2)
       top: 356px
-      right: calc(50% - 618px) 
+      right: calc(50% - 618px)
       width: 40px
       height: 40px
-      background: $yellow 
+      background: $yellow
       +m
         top: -28px
         left: 44px
         width: 70px
         height: 70px
-        background: $pink 
-    
+        background: $pink
+
 .showcase
   position: relative
   height: 1963px
   margin-bottom: 100px
   padding-top: 112px
   overflow: hidden
-  background: $gray-light 
+  background: $gray-light
   +d
     margin-bottom: 40px
   +t
@@ -4211,7 +4204,7 @@ body
     padding-top: 90px
   +m
     height: 1115px
-    margin-bottom: 0 
+    margin-bottom: 0
     padding-top: 72px
   &__wrap
     position: relative
@@ -4219,7 +4212,7 @@ body
     max-width: 500px
     +m
       max-width: 100%
-      text-align: center 
+      text-align: center
   &__stage
     margin-bottom: 24px
     color: $purple
@@ -4236,7 +4229,6 @@ body
       margin: 0
   &__btn .btn
     min-width: 233px
-    height: 82px
     +m
       display: none
   &__bg,
@@ -4257,7 +4249,7 @@ body
       right: -140px
       width: 411px
   &__bg &__pic
-    width: 100% 
+    width: 100%
   &__circle
     border-radius: 50%
     &:first-child
@@ -4265,7 +4257,7 @@ body
       left: calc(50% - 814px)
       width: 191px
       height: 191px
-      background: $pink 
+      background: $pink
     &:nth-child(2)
       top: 642px
       left: calc(50% - 560px)
@@ -4280,7 +4272,7 @@ body
     top: 454px
     left: 50%
     transform: translateX(-35.6%) rotate(-30deg)
-    z-index: 2 
+    z-index: 2
     +m
       top: 350px
   &__preview
@@ -4304,7 +4296,7 @@ body
         margin-top: -105px
   &__preview &__pic
     +t
-      width: 100% 
+      width: 100%
 
 .offer
   position: relative
@@ -4314,27 +4306,27 @@ body
   &__center
     max-width: 1384px
     +m
-      padding: 0 
+      padding: 0
   &__container
     position: relative
     min-height: 701px
     overflow: hidden
-    padding: 72px 
+    padding: 72px
     border-radius: 40px
     background: url('../img/bg-offer.png') no-repeat 50% 50% / cover
-    color: $white 
+    color: $white
     +t
-      padding: 56px 
+      padding: 56px
     +m
       min-height: 628px
     +m
       padding: 80px 32px 0
-      border-radius: 0  
+      border-radius: 0
   &__head
     position: relative
     z-index: 2
     max-width: 810px
-    margin: 0 auto 
+    margin: 0 auto
     text-align: center
   &__title
     margin-bottom: 24px
@@ -4344,7 +4336,7 @@ body
       margin-bottom: 32px
   &__info
     margin-bottom: 44px
-    color: $white 
+    color: $white
     +d
       margin-bottom: 60px
     +m
@@ -4362,7 +4354,7 @@ body
       width: 579px
       height: 579px
       margin-left: -290px
-      background: rgba(#6865FF, .5) 
+      background: rgba(#6865FF, .5)
     &:nth-child(2)
       left: 273px
       bottom: 192px
@@ -4380,7 +4372,7 @@ body
     right: calc(50% - 430px)
     width: 50px
     height: 50px
-    background: $pink 
+    background: $pink
     +d
       right: 125px
   &__view
@@ -4398,19 +4390,19 @@ body
         transition: all .4s
         &:first-child
           transform: translate(50px,-50px)
-          transition-delay: .4s 
+          transition-delay: .4s
         &:nth-child(2)
           transform: translateX(50px) rotate(-20deg)
-          transition-delay: .6s 
+          transition-delay: .6s
         &:nth-child(3)
           transform: translateX(-70px)
-          transition-delay: .8s 
+          transition-delay: .8s
         &:nth-child(4)
           transform: translateX(40px)
-          transition-delay: .2s 
+          transition-delay: .2s
         &:nth-child(5)
           transform: translateY(50px)
-      &.aos-animate 
+      &.aos-animate
         .offer__preview
           opacity: 1
           &:first-child
@@ -4476,11 +4468,11 @@ body
       position: absolute
       z-index: 2
       .offer__pic
-        width: 100% 
+        width: 100%
   &__pic
     +m
-      width: 100% 
-    
+      width: 100%
+
 .footer
   &__row
     display: flex
@@ -4497,7 +4489,7 @@ body
     +m
       width: 100%
       margin-bottom: 32px
-      padding: 0 
+      padding: 0
     &:first-child
       +m
         margin-bottom: 56px
@@ -4510,7 +4502,7 @@ body
     display: inline-block
     font-size: 0
   &__logo &__pic
-    width: 145px 
+    width: 145px
   &__category
     margin-bottom: 50px
     color: $gray
@@ -4518,10 +4510,10 @@ body
       display: flex
       align-items: center
       padding-bottom: 24px
-      border-bottom: 1px solid #E3E6E9 
+      border-bottom: 1px solid #E3E6E9
       margin: 0
       -webkit-tap-highlight-color: rgba(0,0,0,0)
-      transition: all .25s 
+      transition: all .25s
     .icon
       display: none
       +m
@@ -4529,7 +4521,7 @@ body
         margin-left: auto
         font-size: 10px
         fill: $gray
-        transition: fill .25s 
+        transition: fill .25s
   &__col.active &__category
     border-color: $purple
     color: $purple
@@ -4559,7 +4551,7 @@ body
     padding: 26px 0 50px
     border-top: 1px solid #E3E6E9
     +m
-      padding: 0 0 32px 
+      padding: 0 0 32px
       border: none
   &__company
     margin-right: 16px
@@ -4569,7 +4561,7 @@ body
     +fd
     font-size: 14px
     font-weight: 500
-    color: $gray  
+    color: $gray
   &__scroll
     display: flex
     align-items: center
@@ -4577,12 +4569,12 @@ body
     +fd
     font-size: 14px
     font-weight: 500
-    color: $gray 
+    color: $gray
     transition: opacity .25s
     +m
       font-size: 0
     &:hover
-      opacity: .85 
+      opacity: .85
   &__icon
     margin-right: 16px
     font-size: 0
@@ -4597,7 +4589,7 @@ body
     flex-direction: column
     max-width: 1384px
     min-height: 1024px
-    height: 100vh 
+    height: 100vh
     +d
       min-height: auto
     +m
@@ -4606,10 +4598,10 @@ body
     display: flex
     align-items: center
     margin-bottom: 60px
-    padding: 48px 0 
+    padding: 48px 0
     +d
       margin-bottom: 40px
-      padding: 40px 0 
+      padding: 40px 0
     +t
       margin-bottom: 100px
     +m
@@ -4618,14 +4610,14 @@ body
   &__logo
     display: inline-block
     flex-shrink: 0
-    width: 145px 
+    width: 145px
     margin-right: auto
     font-size: 0
     +m
       width: 100px
       margin: 0
   &__pic
-    width: 100% 
+    width: 100%
     &_black
       display: none
       +m
@@ -4641,7 +4633,7 @@ body
     margin-right: 32px
     font-size: 16px
     font-weight: 500
-    letter-spacing: 0 
+    letter-spacing: 0
     color: $dark
     +m
       display: none
@@ -4658,7 +4650,7 @@ body
   &__details
     max-width: 450px
     margin-right: auto
-    color: $white 
+    color: $white
     +d
       max-width: 330px
     +t
@@ -4673,18 +4665,18 @@ body
   &__details &__info
     max-width: 280px
   &__form
-    width: 100% 
+    width: 100%
     max-width: 386px
     margin-right: 107px
     +x
       margin-right: 0
     +t
       margin: 0 auto
-      text-align: center 
+      text-align: center
   &__form &__info
-    color: $gray 
+    color: $gray
   &__btns &__btn
-    min-width: 100% 
+    min-width: 100%
     +nl
       margin-bottom: 16px
   &__links
@@ -4698,11 +4690,11 @@ body
       font-size: 15px
     &:first-child
       display: none
-      color: $gray 
+      color: $gray
       +m
         display: inline-block
     &:nth-child(2)
-      color: $purple 
+      color: $purple
     +nl
       margin-bottom: 16px
   &__field
@@ -4720,17 +4712,17 @@ body
     pointer-events: none
   &__bg
     top: 0
-    left: calc(50% - 1070px) 
+    left: calc(50% - 1070px)
     z-index: -2
     width: 1050px
     +d
-      left: calc(50% - 1030px) 
+      left: calc(50% - 1030px)
     +t
       display: none
   &__hand
     top: 460px
     left: calc(50% - 800px)
-    width: 880px 
+    width: 880px
     +rmin(1600)
       left: 0
     +d
@@ -4740,23 +4732,23 @@ body
   &__img
     top: 394px
     left: calc(50% - 686px)
-    width: 742px 
+    width: 742px
     +d
       left: calc(50% - 486px)
       width: 500px
   &__foot
-    padding: 50px 0 
+    padding: 50px 0
     +d
       display: none
   &__author
     display: inline-flex
     align-items: center
     font-weight: 500
-    letter-spacing: -.05em 
-    color: $gray 
+    letter-spacing: -.05em
+    color: $gray
     transition: opacity .25s
     &:hover
-      opacity: .8  
+      opacity: .8
   &__author &__icon
     width: 40px
     margin-left: 16px
@@ -4775,7 +4767,7 @@ body
         left: -250px
         width: 500px
         height: 500px
-        background: $purple 
+        background: $purple
       +m
         top: -97px
         left: -97px
@@ -4786,7 +4778,7 @@ body
       left: calc(50% - 250px)
       width: 128px
       height: 128px
-      background: $pink 
+      background: $pink
       +d
         left: calc(50% - 150px)
       +t
@@ -4810,7 +4802,7 @@ body
       bottom: 196px
       width: 67px
       height: 67px
-      background: $pink 
+      background: $pink
       +t
         right: 120px
         bottom: 250px
@@ -4825,7 +4817,7 @@ body
       bottom: -107px
       width: 215px
       height: 215px
-      background: $yellow 
+      background: $yellow
       +m
         left: -33px
         right: auto
@@ -4836,7 +4828,7 @@ body
     top: 320px
     right: calc(50% - 773px)
     z-index: -1
-    width: 140px  
+    width: 140px
     +w
       right: -50px
     +m
@@ -4864,7 +4856,7 @@ body
   &_solo &__form &__btn
     min-width: 213px
     +t
-      min-width: 100% 
+      min-width: 100%
   &_solo &__head
     +m
       margin-bottom: 15px
@@ -4877,8 +4869,8 @@ body
       display: none
   &_solo &__links &__link
     +m
-      color: $purple 
-    
+      color: $purple
+
 .field
   &__label
     text-align: left
@@ -4886,7 +4878,7 @@ body
     font-size: 14px
     font-weight: 500
     line-height: 1
-    color: $dark  
+    color: $dark
   & > &__label
     margin-bottom: 16px
   &__line
@@ -4899,7 +4891,7 @@ body
     color: $purple
     transition: opacity .25s
     &:hover
-      opacity: .8 
+      opacity: .8
   &__line &__link
     margin-left: auto
   &__wrap
@@ -4907,26 +4899,26 @@ body
   &__input,
   &__textarea
     width: 100%
-    border: 1px solid #E3E6E9  
-    border-radius: 16px 
+    border: 1px solid #E3E6E9
+    border-radius: 16px
     +f
     font-size: 16px
     color: $dark
-    transition: all .25s 
+    transition: all .25s
     +placeholder
-      color: $gray 
+      color: $gray
     &:focus
       border-color: transparent
-      box-shadow: 0 10px 25px rgba($dark, .1)  
+      box-shadow: 0 10px 25px rgba($dark, .1)
   &__input
     height: 72px
-    padding: 0 24px 0 72px 
+    padding: 0 24px 0 72px
     +m
       padding-left: 58px
   &__textarea
     height: 130px
-    padding: 21px 24px 16px 72px 
-    resize: none 
+    padding: 21px 24px 16px 72px
+    resize: none
     +m
       padding-left: 58px
   &__icon
@@ -4956,7 +4948,7 @@ body
     min-height: 100vh
     border-radius: 0
   &__wrap
-    position: relative 
+    position: relative
   &__head
     margin-bottom: 60px
     text-align: center
@@ -4970,10 +4962,10 @@ body
   &__body
     padding: 64px 80px
     background: $white
-    border-radius: 40px 
+    border-radius: 40px
     +m
       padding: 56px 20px 30px
-      border-radius: 0  
+      border-radius: 0
   &__title
     margin-bottom: 16px
     text-align: center
@@ -4983,7 +4975,7 @@ body
   &__info
     margin-bottom: 35px
     text-align: center
-    color: $gray 
+    color: $gray
   &__form
     position: relative
     z-index: 2
@@ -4992,8 +4984,6 @@ body
   &__field
     +nl
       margin-bottom: 16px
-  &__btn
-    height: 64px
   &__circle,
   &__preview
     position: absolute
@@ -5006,7 +4996,7 @@ body
       right: 221px
       width: 32px
       height: 32px
-      background: $pink 
+      background: $pink
       +m
         display: none
     &:first-child
@@ -5016,7 +5006,7 @@ body
       height: 48px
       background: $yellow
       +m
-        display: none 
+        display: none
   &__preview
     +m
       display: none
@@ -5029,7 +5019,7 @@ body
       bottom: 85px
       width: 230px
   &__preview &__pic
-    width: 100% 
+    width: 100%
   .mfp-close
     position: absolute
     top: 140px
@@ -5043,7 +5033,7 @@ body
     font-size: 0
     background: $white url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 14.2929C-0.0976311 14.6834 -0.0976311 15.3166 0.292893 15.7071C0.683418 16.0976 1.31658 16.0976 1.70711 15.7071L7.99999 9.41423L14.2929 15.7071C14.6834 16.0977 15.3166 16.0977 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L9.4142 8.00001L15.7071 1.70711C16.0976 1.31658 16.0976 0.683417 15.7071 0.292893C15.3166 -0.0976312 14.6834 -0.0976308 14.2929 0.292893L7.99999 6.5858L1.70711 0.292922C1.31658 -0.0976023 0.683419 -0.0976023 0.292895 0.292922C-0.0976295 0.683446 -0.0976295 1.31661 0.292895 1.70714L6.58577 8.00001L0.292893 14.2929Z' fill='%23292930'/%3E%3C/svg%3E%0A") no-repeat 50% 50% / 12px auto
     -webkit-tap-highlight-color: rgba(0,0,0,0)
-    transition: box-shadow .25s 
+    transition: box-shadow .25s
     +m
       top: 16px
       right: 16px
@@ -5055,31 +5045,31 @@ body
     padding: 40px
   +m
     padding: 0
-    
+
 @media (max-width: 900px)
   .mfp-container
     padding: 40px
-      
+
 .mfp-bg
   background: url('../img/bg-popup.png') no-repeat 50% 20% / cover
 
-.mfp-zoom-in 
+.mfp-zoom-in
   .popup
     opacity: 0
     transition: all 0.2s ease-in-out
-    transform: scale(0.8) 
-  &.mfp-bg 
+    transform: scale(0.8)
+  &.mfp-bg
     opacity: 0
     transition: all 0.2s ease-out
   &.mfp-ready
     .popup
       opacity: 1
-      transform: scale(1) 
-    &.mfp-bg 
+      transform: scale(1)
+    &.mfp-bg
       opacity: 1
-  &.mfp-removing 
-    .popup 
-      transform: scale(0.8) 
+  &.mfp-removing
+    .popup
+      transform: scale(0.8)
       opacity: 0
     &.mfp-bg
       opacity: 0
@@ -5088,14 +5078,14 @@ body
   transform: translateX(-50px) scaleX(1.1)
   opacity: 0
   transition-property: transform, opacity
-  &.aos-animate 
+  &.aos-animate
     transform: translateX(0) scaleX(1)
     opacity: 1
 [data-aos="animation-scale-x-right"]
   transform: translateX(50px) scaleX(1.1)
   opacity: 0
   transition-property: transform, opacity
-  &.aos-animate 
+  &.aos-animate
     transform: translateX(0) scaleX(1)
     opacity: 1
 
@@ -5103,15 +5093,15 @@ body
   transform: translateY(40px) scaleY(1.4)
   opacity: 0
   transition-property: transform, opacity
-  &.aos-animate 
+  &.aos-animate
     transform: translateY(0) scaleY(1)
-    opacity: 1 
+    opacity: 1
 
 [data-aos="animation-scale-x"]
   transform: translateX(-40px) scaleX(1.1)
   opacity: 0
   transition-property: transform, opacity
-  &.aos-animate 
+  &.aos-animate
     transform: translateX(0) scaleX(1)
     opacity: 1
 
@@ -5119,6 +5109,6 @@ body
   transform: translateY(40px)
   opacity: 0
   transition-property: transform, opacity
-  &.aos-animate 
+  &.aos-animate
     transform: translateY(0)
-    opacity: 1 
+    opacity: 1
