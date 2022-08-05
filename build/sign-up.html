@@ -28,15 +28,22 @@
     <meta property="og:site_name" content="Collab">
     <meta property="fb:admins" content="132951670226590">
     <link rel="stylesheet" media="all" href="css/app.css">
-    <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
-if (viewportmeta) {
-  if (screen.width < 375) {
-    var newScale = screen.width / 375;
-    viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
-  } else {
-    viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
-  }
-}</script>
+    <script>
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta)
+      {
+        if (screen.width < 375)
+        {
+          var newScale = screen.width / 375;
+          viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+        }
+        else
+        {
+          viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+        }
+      }
+
+    </script>
   </head>
   <body>
     <div class="page">

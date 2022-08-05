@@ -2551,6 +2551,10 @@ body:not(.touch-device) .header__item:hover .header__body {
   color: #999FAE;
 }
 
+.header__input::-moz-placeholder {
+  color: #999FAE;
+}
+
 .header__input::-ms-input-placeholder {
   color: #999FAE;
 }
@@ -3431,6 +3435,10 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .access__input::-webkit-input-placeholder {
+  color: #999FAE;
+}
+
+.access__input::-moz-placeholder {
   color: #999FAE;
 }
 
@@ -7269,6 +7277,10 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .field__input::-webkit-input-placeholder, .field__textarea::-webkit-input-placeholder {
+  color: #999FAE;
+}
+
+.field__input::-moz-placeholder, .field__textarea::-moz-placeholder {
   color: #999FAE;
 }
 
