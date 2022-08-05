@@ -3646,6 +3646,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .like {
   position: relative;
+  margin-top: 125px;
   margin-bottom: 125px;
 }
 
@@ -4130,7 +4131,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .work__stage {
   margin-bottom: 16px;
-  color: #C75C6F;
+  color: #fff;
 }
 
 .work__title {
@@ -7834,6 +7835,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .like {
     margin-bottom: 100px;
+    margin-top: 100px;
   }
   .like__container {
     padding: 105px 38px 143px;
@@ -9033,6 +9035,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .like {
     margin-bottom: 80px;
+    margin-top: 80px;
   }
   .like__center {
     max-width: 400px;
