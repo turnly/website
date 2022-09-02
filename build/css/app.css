@@ -4174,7 +4174,6 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .work__text {
-  margin-bottom: 24px;
   font-size: 22px;
   line-height: 1.5;
   font-weight: 500;
@@ -4379,7 +4378,8 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .teams {
   position: relative;
-  margin-bottom: 138px;
+  margin-bottom: 332px;
+  margin-top: 332px;
 }
 
 .teams__head {
@@ -7898,6 +7898,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .teams {
     margin-bottom: 170px;
+    margin-top: 170px;
   }
   .teams__head {
     margin-bottom: 65px;
@@ -9191,6 +9192,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .teams {
     margin-bottom: 80px;
+    margin-top: 80px;
   }
   .teams__head {
     margin-bottom: 112px;
